@@ -5,10 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/before-after.css">
     <link rel="stylesheet" href="style.css">
     <style>
         .banner {
             background: url(assets/img/banner.webp);
+        }
+        .questions-form-checkbox input:checked + .checkmark {
+            background-color: transparent;
+            background-image: url(assets/img/questions-form-check.webp);
+            background-size: cover;
+            background-position: center;
+        }
+        .main-slider-wrapper .slick-prev::before {
+            background: url(assets/img/main-slider-prev.svg);
+        }
+        .main-slider-wrapper .slick-next::before {
+            background: url(assets/img/main-slider-next.svg);
+        }
+        .sales-slider .slick-prev::before {
+            background: url(assets/img/main-slider-prev.svg);
+        }
+        .sales-slider .slick-next::before {
+            background: url(assets/img/main-slider-next.svg);
+        }
+        .reviews-slider .slick-prev::before {
+            background: url(assets/img/main-slider-prev.svg);
+        }
+        .reviews-slider .slick-next::before {
+            background: url(assets/img/main-slider-next.svg);
+        }
+        .reasons-section {
+            background: url(assets/img/reasons-bg.webp);
+        }
+        .example-slider .handle:after {
+            background-image: url(assets/img/example-slider-arrow.webp);
         }
     </style>
 </head>
@@ -569,6 +602,885 @@
                 </div>
             </div>
         </section>
+        <section class="main-slider-section">
+            <div class="container">
+                <div class="main-slider-section-title">
+                    <h2>Что входит в уборку</h2>
+                    <p>Наш клинер приезжает в назначенное время со всем необходимым и сразу приступает к делу.</p>
+                </div>
+                <div class="main-slider-wrapper">
+                    <div class="main-slider-slide" style="background: url(assets/img/main-slide1.webp);"></div>
+                    <div class="main-slider-slide" style="background: url(assets/img/main-slide1.webp);"></div>
+                    <div class="main-slider-slide" style="background: url(assets/img/main-slide1.webp);"></div>
+                    <div class="main-slider-slide" style="background: url(assets/img/main-slide1.webp);"></div>
+                </div>
+            </div>
+        </section>
+        <section class="example-section">
+            <div class="container">
+                <div class="example-section-title">
+                    <h2>Цены на клининг в Москве</h2>
+                    <a href="#"><button class="btn price-title-btn">Все наши работы</button></a>
+                </div>
+                <div class="example-items-wrapper row">
+                    <div class="col-lg-6">
+                        <div class="example-item">
+                            <div class="example-item-image">
+                              <div class="example-slider">
+                                <img src="assets/img/example-slider1.jpg" alt="example">
+                                <div class="resize">
+                                    <img src="assets/img/example-slider2.jpg" alt="example" style="height: 400px;">
+                                </div>
+                                <span class="handle"></span>
+                              </div>
+                            <div class="example-item-image-bar1">До</div>
+                                <div class="example-item-image-bar2">После</div>
+                            </div>
+                            <div class="example-item-content">
+                                <h6>Уборка 2-х комнатной квартиры после ремонта</h6>
+                                <div class="example-item-params-wrapper row">
+                                    <div class="example-item-param col">
+                                        <img src="assets/img/example-param1.webp" alt="param">
+                                        <p>Цена: <span>4700 руб.</span></p>
+                                    </div>
+                                    <div class="example-item-param col">
+                                        <img src="assets/img/example-param1.webp" alt="param">
+                                        <p>Сроки: <span>9 часов</span></p>
+                                    </div>
+                                    <div class="example-item-param col">
+                                        <img src="assets/img/example-param1.webp" alt="param">
+                                        <p>Площадь: <span>72 м²</span></p>
+                                    </div>
+                                </div>
+                                <h5>Виды выполненных работ:</h5>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Удалили строительную пыль с потолка</p>
+                                </div>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Сделали влажную уборку стен</p>
+                                </div>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Собрали и вынесли крупногабаритный строительный мусор</p>
+                                </div>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Удалили строительную пыль со всех поверхностей</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="example-item">
+                            <div class="example-item-image">
+                              <div class="example-slider">
+                                <img src="assets/img/example-slider1.jpg" alt="example">
+                                <div class="resize">
+                                    <img src="assets/img/example-slider2.jpg" alt="example" style="height: 400px;">
+                                </div>
+                                <span class="handle"></span>
+                              </div>
+                            <div class="example-item-image-bar1">До</div>
+                                <div class="example-item-image-bar2">После</div>
+                            </div>
+                            <div class="example-item-content">
+                                <h6>Уборка 2-х комнатной квартиры после ремонта</h6>
+                                <div class="example-item-params-wrapper row">
+                                    <div class="example-item-param col">
+                                        <img src="assets/img/example-param1.webp" alt="param">
+                                        <p>Цена: <span>4700 руб.</span></p>
+                                    </div>
+                                    <div class="example-item-param col">
+                                        <img src="assets/img/example-param1.webp" alt="param">
+                                        <p>Сроки: <span>9 часов</span></p>
+                                    </div>
+                                    <div class="example-item-param col">
+                                        <img src="assets/img/example-param1.webp" alt="param">
+                                        <p>Площадь: <span>72 м²</span></p>
+                                    </div>
+                                </div>
+                                <h5>Виды выполненных работ:</h5>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Удалили строительную пыль с потолка</p>
+                                </div>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Сделали влажную уборку стен</p>
+                                </div>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Собрали и вынесли крупногабаритный строительный мусор</p>
+                                </div>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Удалили строительную пыль со всех поверхностей</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="example-item">
+                            <div class="example-item-image">
+                              <div class="example-slider">
+                                <img src="assets/img/example-slider1.jpg" alt="example">
+                                <div class="resize">
+                                    <img src="assets/img/example-slider2.jpg" alt="example" style="height: 400px;">
+                                </div>
+                                <span class="handle"></span>
+                              </div>
+                            <div class="example-item-image-bar1">До</div>
+                                <div class="example-item-image-bar2">После</div>
+                            </div>
+                            <div class="example-item-content">
+                                <h6>Уборка 2-х комнатной квартиры после ремонта</h6>
+                                <div class="example-item-params-wrapper row">
+                                    <div class="example-item-param col">
+                                        <img src="assets/img/example-param1.webp" alt="param">
+                                        <p>Цена: <span>4700 руб.</span></p>
+                                    </div>
+                                    <div class="example-item-param col">
+                                        <img src="assets/img/example-param1.webp" alt="param">
+                                        <p>Сроки: <span>9 часов</span></p>
+                                    </div>
+                                    <div class="example-item-param col">
+                                        <img src="assets/img/example-param1.webp" alt="param">
+                                        <p>Площадь: <span>72 м²</span></p>
+                                    </div>
+                                </div>
+                                <h5>Виды выполненных работ:</h5>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Удалили строительную пыль с потолка</p>
+                                </div>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Сделали влажную уборку стен</p>
+                                </div>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Собрали и вынесли крупногабаритный строительный мусор</p>
+                                </div>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Удалили строительную пыль со всех поверхностей</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="example-item">
+                            <div class="example-item-image">
+                              <div class="example-slider">
+                                <img src="assets/img/example-slider1.jpg" alt="example">
+                                <div class="resize">
+                                    <img src="assets/img/example-slider2.jpg" alt="example" style="height: 400px;">
+                                </div>
+                                <span class="handle"></span>
+                              </div>
+                            <div class="example-item-image-bar1">До</div>
+                                <div class="example-item-image-bar2">После</div>
+                            </div>
+                            <div class="example-item-content">
+                                <h6>Уборка 2-х комнатной квартиры после ремонта</h6>
+                                <div class="example-item-params-wrapper row">
+                                    <div class="example-item-param col">
+                                        <img src="assets/img/example-param1.webp" alt="param">
+                                        <p>Цена: <span>4700 руб.</span></p>
+                                    </div>
+                                    <div class="example-item-param col">
+                                        <img src="assets/img/example-param1.webp" alt="param">
+                                        <p>Сроки: <span>9 часов</span></p>
+                                    </div>
+                                    <div class="example-item-param col">
+                                        <img src="assets/img/example-param1.webp" alt="param">
+                                        <p>Площадь: <span>72 м²</span></p>
+                                    </div>
+                                </div>
+                                <h5>Виды выполненных работ:</h5>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Удалили строительную пыль с потолка</p>
+                                </div>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Сделали влажную уборку стен</p>
+                                </div>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Собрали и вынесли крупногабаритный строительный мусор</p>
+                                </div>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Удалили строительную пыль со всех поверхностей</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="example-item">
+                            <div class="example-item-image">
+                              <div class="example-slider">
+                                <img src="assets/img/example-slider1.jpg" alt="example">
+                                <div class="resize">
+                                    <img src="assets/img/example-slider2.jpg" alt="example" style="height: 400px;">
+                                </div>
+                                <span class="handle"></span>
+                              </div>
+                            <div class="example-item-image-bar1">До</div>
+                                <div class="example-item-image-bar2">После</div>
+                            </div>
+                            <div class="example-item-content">
+                                <h6>Уборка 2-х комнатной квартиры после ремонта</h6>
+                                <div class="example-item-params-wrapper row">
+                                    <div class="example-item-param col">
+                                        <img src="assets/img/example-param1.webp" alt="param">
+                                        <p>Цена: <span>4700 руб.</span></p>
+                                    </div>
+                                    <div class="example-item-param col">
+                                        <img src="assets/img/example-param1.webp" alt="param">
+                                        <p>Сроки: <span>9 часов</span></p>
+                                    </div>
+                                    <div class="example-item-param col">
+                                        <img src="assets/img/example-param1.webp" alt="param">
+                                        <p>Площадь: <span>72 м²</span></p>
+                                    </div>
+                                </div>
+                                <h5>Виды выполненных работ:</h5>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Удалили строительную пыль с потолка</p>
+                                </div>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Сделали влажную уборку стен</p>
+                                </div>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Собрали и вынесли крупногабаритный строительный мусор</p>
+                                </div>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Удалили строительную пыль со всех поверхностей</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="example-item">
+                            <div class="example-item-image">
+                              <div class="example-slider">
+                                <img src="assets/img/example-slider1.jpg" alt="example">
+                                <div class="resize">
+                                    <img src="assets/img/example-slider2.jpg" alt="example" style="height: 400px;">
+                                </div>
+                                <span class="handle"></span>
+                              </div>
+                            <div class="example-item-image-bar1">До</div>
+                                <div class="example-item-image-bar2">После</div>
+                            </div>
+                            <div class="example-item-content">
+                                <h6>Уборка 2-х комнатной квартиры после ремонта</h6>
+                                <div class="example-item-params-wrapper row">
+                                    <div class="example-item-param col">
+                                        <img src="assets/img/example-param1.webp" alt="param">
+                                        <p>Цена: <span>4700 руб.</span></p>
+                                    </div>
+                                    <div class="example-item-param col">
+                                        <img src="assets/img/example-param1.webp" alt="param">
+                                        <p>Сроки: <span>9 часов</span></p>
+                                    </div>
+                                    <div class="example-item-param col">
+                                        <img src="assets/img/example-param1.webp" alt="param">
+                                        <p>Площадь: <span>72 м²</span></p>
+                                    </div>
+                                </div>
+                                <h5>Виды выполненных работ:</h5>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Удалили строительную пыль с потолка</p>
+                                </div>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Сделали влажную уборку стен</p>
+                                </div>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Собрали и вынесли крупногабаритный строительный мусор</p>
+                                </div>
+                                <div class="example-item-type">
+                                    <img src="assets/img/questions-form-check.webp" alt="check">
+                                    <p>Удалили строительную пыль со всех поверхностей</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reasons-section">
+            <div class="banner-filter"></div>
+            <div class="container">
+                <div class="reasons-wrapper">
+                    <div class="reasons-content">
+                        <h2>4 причины заказать уборку <br> в компании <span>Клининг24</span></h2>
+                        <div class="reasons-item">
+                            <div class="reasons-item-num">01</div>
+                            <p>Приедем на уборку без опозданий. Выполним работы качественно и в срок. Ваш менеджер будет на связи с вами 24\7 в мессенджерах.</p>
+                        </div>
+                        <div class="reasons-item">
+                            <div class="reasons-item-num">02</div>
+                            <p>Заключаем Договор на оказание услуг как с физ. лицами, так и с юр. лицами. Дарим сертификат на все последующие уборки с учетом скидок от 5-12%.</p>
+                        </div>
+                        <div class="reasons-item">
+                            <div class="reasons-item-num">03</div>
+                            <p>Профессиональное оборудование Karcher, расходники, химия (Grass, Pro-Brite, Effect, Уникум и пр.).</p>
+                        </div>
+                        <div class="reasons-item">
+                            <div class="reasons-item-num">04</div>
+                            <p>Гарантируем безопасность и сохранность вашего имущества. Все сотрудники проходят проверку внутренней службы безопасности.</p>
+                        </div>
+                        <div class="reasons-form-bar">
+                            <form action="" class="form questions-form">
+                                <div class="d-flex">
+                                    <input type="text" class="questions-form-input" placeholder="Ваш номер телефона*" required> 
+                                    <button class="btn questions-form-send">Заказать уборку</button>
+                                </div>
+                                <div class="questions-form-alert">
+                                    <label class="questions-form-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>  
+                                    <p>Нажимая «Заказать уборку», я даю согласие на <span>обработку персональных данных</span></p>
+                                </div>                                   
+                            </form>
+                        </div>
+                        <div class="reasons-contact-wrapper">
+                            <p>или напишите нам в <br> любой мессенджер:</p>
+                            <a href="#">
+                                <button class="btn banner-btn2" style="font-size: 12px; border-radius: 12px; width: 241px;height: 57px;margin-right: 8px;">
+                                    <img src="assets/img/banner-whatsapp-icon.webp" alt="whatsapp">
+                                    Написать в WhatsApp
+                                </button>
+                            </a>
+                            <a href="#">
+                                <button class="btn socials-button2" style="font-size: 12px;border-radius: 12px;width: 241px;height: 57px;">
+                                    <img src="assets/img/socials-btn2.webp" alt="socials-btn2" style="margin-right: -25px;transform: translateX(-23px);">
+                                    Написать в Telegram
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="reasons-img">
+                        <img src="assets/img/reasons-girl.webp" alt="girl">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sales-section">
+            <div class="container">
+                <div class="price-section-title">
+                    <h2>Хотите заказать уборку <span>еще дешевле?</span></h2>
+                    <a href="#"><button class="btn price-title-btn">Смотреть все акции</button></a>
+                </div>
+                <div class="sales-slider">
+                    <div class="sales-slide">
+                        <div class="sales-slide-img" style="background: url(assets/img/sales-slide1.webp);">
+                            <div class="sales-slide-img-alert">
+                                Скидка
+                            </div>
+                        </div>
+                        <div class="sales-slide-content">
+                            <h5>Скидка 10% на первый заказ</h5>
+                            <p>Получите купон и гарантированную скидку на любые наши услуги при первом заказе</p>
+                            <a href="#"><button class="btn sales-btn"><img src="assets/img/nav-light.webp" alt="light">Заказать по акции</button></a>
+                        </div>
+                    </div>
+                    <div class="sales-slide">
+                        <div class="sales-slide-img" style="background: url(assets/img/sales-slide1.webp);">
+                            <div class="sales-slide-img-alert">
+                                Скидка
+                            </div>
+                        </div>
+                        <div class="sales-slide-content">
+                            <h5>Скидка 10% на первый заказ</h5>
+                            <p>Получите купон и гарантированную скидку на любые наши услуги при первом заказе</p>
+                            <a href="#"><button class="btn sales-btn"><img src="assets/img/nav-light.webp" alt="light">Заказать по акции</button></a>
+                        </div>
+                    </div>
+                    <div class="sales-slide">
+                        <div class="sales-slide-img" style="background: url(assets/img/sales-slide1.webp);">
+                            <div class="sales-slide-img-alert">
+                                Скидка
+                            </div>
+                        </div>
+                        <div class="sales-slide-content">
+                            <h5>Скидка 10% на первый заказ</h5>
+                            <p>Получите купон и гарантированную скидку на любые наши услуги при первом заказе</p>
+                            <a href="#"><button class="btn sales-btn"><img src="assets/img/nav-light.webp" alt="light">Заказать по акции</button></a>
+                        </div>
+                    </div>
+                    <div class="sales-slide">
+                        <div class="sales-slide-img" style="background: url(assets/img/sales-slide1.webp);">
+                            <div class="sales-slide-img-alert">
+                                Скидка
+                            </div>
+                        </div>
+                        <div class="sales-slide-content">
+                            <h5>Скидка 10% на первый заказ</h5>
+                            <p>Получите купон и гарантированную скидку на любые наши услуги при первом заказе</p>
+                            <a href="#"><button class="btn sales-btn"><img src="assets/img/nav-light.webp" alt="light">Заказать по акции</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews-section">
+            <div class="container">
+                <div class="price-section-title">
+                    <h2>Отзывы наших клиентов</h2>
+                    <a href="#"><button class="btn price-title-btn">Читать все отзывы</button></a>
+                </div>
+                <div class="reviews-bars-wrapper row">
+                    <div class="col-lg-3">
+                        <div class="reviews-bar">
+                            <div class="reviews-bar-content">
+                                <p>Рейтинг компании в</p>
+                                <img style="width: 86px;"
+                                src="assets/img/reviews-yandex.webp"
+                                alt="yandex">
+                                <span>331 отзыв</span>
+                            </div>
+                            <div class="reviews-bar-rate">
+                                <strong>5.0</strong>
+                                <img src="assets/img/reviews-stars.webp" alt="stars">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="reviews-bar">
+                            <div class="reviews-bar-content">
+                                <p>Рейтинг компании в</p>
+                                <img style="width: 139px;"
+                                src="assets/img/reviews-maps.webp"
+                                alt="yandex">
+                                <span>129 отзыв</span>
+                            </div>
+                            <div class="reviews-bar-rate">
+                                <strong>4.9</strong>
+                                <img src="assets/img/reviews-stars.webp" alt="stars">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="reviews-bar">
+                            <div class="reviews-bar-content">
+                                <p>Рейтинг компании в</p>
+                                <img style="width: 84px;"
+                                src="assets/img/reviews-2gis.webp"
+                                alt="yandex">
+                                <span>69 отзыв</span>
+                            </div>
+                            <div class="reviews-bar-rate">
+                                <strong>5.0</strong>
+                                <img src="assets/img/reviews-stars.webp" alt="stars">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="reviews-bar">
+                            <div class="reviews-bar-content">
+                                <p>Рейтинг компании в</p>
+                                <img style="width: 80px;"
+                                src="assets/img/reviews-zoon.webp"
+                                alt="yandex">
+                                <span>34 отзыв</span>
+                            </div>
+                            <div class="reviews-bar-rate">
+                                <strong>4.6</strong>
+                                <img src="assets/img/reviews-stars.webp" alt="stars">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-videos-wrapper row">
+                    <div class="col-lg-4">
+                        <div class="reviews-video-item">
+                            <div class="reviews-video" style="background: url(assets/img/reviews-video-bg.webp);">
+                                 <img class="reviews-video-start" src="assets/img/reviews-start.webp" alt="start">
+                            </div>
+                            <div class="reviews-video-title">Видео отзыв от Елены о уборке квартиры</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="reviews-video-item">
+                            <div class="reviews-video" style="background: url(assets/img/reviews-video-bg.webp);">
+                                 <img class="reviews-video-start" src="assets/img/reviews-start.webp" alt="start">
+                            </div>
+                            <div class="reviews-video-title">Видео отзыв от Елены о уборке квартиры</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="reviews-video-item">
+                            <div class="reviews-video" style="background: url(assets/img/reviews-video-bg.webp);">
+                                 <img class="reviews-video-start" src="assets/img/reviews-start.webp" alt="start">
+                            </div>
+                            <div class="reviews-video-title">Видео отзыв от Елены о уборке квартиры</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-slider">
+                    <div class="reviews-slide">
+                        <img style="width: 34px;"
+                        src="assets/img/yandex-slider.webp"
+                        alt="yandex"
+                        class="reviews-slide-logo">
+                        <div class="reviews-slide-rate">
+                            <img src="assets/img/reviews-slider-stars.webp" alt="stars">
+                            <p>5,0</p>
+                        </div>
+                        <h5>Петрова Анна</h5>
+                        <h6>Хочу выразить огромную благодарность клининговой компании</h6>
+                        <p>Учитывая то, что у нас уже есть ребенок и времени на уборку практически не было, мы решили обратиться за помощью, и муж вызвал клинеров. Команда из двух специалистов прибыла вовремя, быстро приступила к работе и очень тщательно вымыла всю квартиру за несколько часов. Они проявили себя с лучшей стороны, учли мои пожелания по поводу эко-средств и особенности уборки, связанные с нашим положением. Мы были приятно удивлены результатом.</p>
+                        <div class="reviews-slide-alert">
+                            Генеральная уборка квартиры
+                        </div>
+                    </div>
+                    <div class="reviews-slide">
+                        <img style="width: 34px;"
+                        src="assets/img/yandex-slider.webp"
+                        alt="yandex"
+                        class="reviews-slide-logo">
+                        <div class="reviews-slide-rate">
+                            <img src="assets/img/reviews-slider-stars.webp" alt="stars">
+                            <p>5,0</p>
+                        </div>
+                        <h5>Петрова Анна</h5>
+                        <h6>Хочу выразить огромную благодарность клининговой компании</h6>
+                        <p>Учитывая то, что у нас уже есть ребенок и времени на уборку практически не было, мы решили обратиться за помощью, и муж вызвал клинеров. Команда из двух специалистов прибыла вовремя, быстро приступила к работе и очень тщательно вымыла всю квартиру за несколько часов. Они проявили себя с лучшей стороны, учли мои пожелания по поводу эко-средств и особенности уборки, связанные с нашим положением. Мы были приятно удивлены результатом.</p>
+                        <div class="reviews-slide-alert">
+                            Генеральная уборка квартиры
+                        </div>
+                    </div>
+                    <div class="reviews-slide">
+                        <img style="width: 34px;"
+                        src="assets/img/yandex-slider.webp"
+                        alt="yandex"
+                        class="reviews-slide-logo">
+                        <div class="reviews-slide-rate">
+                            <img src="assets/img/reviews-slider-stars.webp" alt="stars">
+                            <p>5,0</p>
+                        </div>
+                        <h5>Петрова Анна</h5>
+                        <h6>Хочу выразить огромную благодарность клининговой компании</h6>
+                        <p>Учитывая то, что у нас уже есть ребенок и времени на уборку практически не было, мы решили обратиться за помощью, и муж вызвал клинеров. Команда из двух специалистов прибыла вовремя, быстро приступила к работе и очень тщательно вымыла всю квартиру за несколько часов. Они проявили себя с лучшей стороны, учли мои пожелания по поводу эко-средств и особенности уборки, связанные с нашим положением. Мы были приятно удивлены результатом.</p>
+                        <div class="reviews-slide-alert">
+                            Генеральная уборка квартиры
+                        </div>
+                    </div>
+                    <div class="reviews-slide">
+                        <img style="width: 34px;"
+                        src="assets/img/yandex-slider.webp"
+                        alt="yandex"
+                        class="reviews-slide-logo">
+                        <div class="reviews-slide-rate">
+                            <img src="assets/img/reviews-slider-stars.webp" alt="stars">
+                            <p>5,0</p>
+                        </div>
+                        <h5>Петрова Анна</h5>
+                        <h6>Хочу выразить огромную благодарность клининговой компании</h6>
+                        <p>Учитывая то, что у нас уже есть ребенок и времени на уборку практически не было, мы решили обратиться за помощью, и муж вызвал клинеров. Команда из двух специалистов прибыла вовремя, быстро приступила к работе и очень тщательно вымыла всю квартиру за несколько часов. Они проявили себя с лучшей стороны, учли мои пожелания по поводу эко-средств и особенности уборки, связанные с нашим положением. Мы были приятно удивлены результатом.</p>
+                        <div class="reviews-slide-alert">
+                            Генеральная уборка квартиры
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team-section">
+            <div class="container">
+                <div class="services-title">
+                    <h2>Кто будет делать уборку?</h2>
+                </div>
+                <div class="team-items-wrapper row">
+                    <div class="col-lg-3">
+                        <div class="team-item">
+                            <div class="team-item-image" style="background: url(assets/img/team1.webp);">
+                                <div class="team-image-rate">
+                                    <img src="assets/img/banner-star.webp" alt="star">
+                                    <p>4,9 / 5</p>
+                                </div>
+                            </div>
+                            <div class="team-item-content">
+                                <h6>Кристина</h6>
+                                <p>Опыт: 2 года</p>
+                                <p>Клинер - 67 уборок</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="team-item">
+                            <div class="team-item-image" style="background: url(assets/img/team1.webp);">
+                                <div class="team-image-rate">
+                                    <img src="assets/img/banner-star.webp" alt="star">
+                                    <p>4,9 / 5</p>
+                                </div>
+                            </div>
+                            <div class="team-item-content">
+                                <h6>Кристина</h6>
+                                <p>Опыт: 2 года</p>
+                                <p>Клинер - 67 уборок</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="team-item">
+                            <div class="team-item-image" style="background: url(assets/img/team1.webp);">
+                                <div class="team-image-rate">
+                                    <img src="assets/img/banner-star.webp" alt="star">
+                                    <p>4,9 / 5</p>
+                                </div>
+                            </div>
+                            <div class="team-item-content">
+                                <h6>Кристина</h6>
+                                <p>Опыт: 2 года</p>
+                                <p>Клинер - 67 уборок</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="team-item">
+                            <div class="team-item-image" style="background: url(assets/img/team1.webp);">
+                                <div class="team-image-rate">
+                                    <img src="assets/img/banner-star.webp" alt="star">
+                                    <p>4,9 / 5</p>
+                                </div>
+                            </div>
+                            <div class="team-item-content">
+                                <h6>Кристина</h6>
+                                <p>Опыт: 2 года</p>
+                                <p>Клинер - 67 уборок</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-bars-wrapper">
+                    <div class="team-bar-wrapper">
+                        <div class="team-bar">
+                            <p>+ 79 клинеров в штате</p>
+                        </div>
+                    </div>
+                    <div class="team-bar-wrapper">
+                        <div class="team-bar">
+                            <p>Опыт сотрудников от 2-х до 10-и лет</p>
+                        </div>
+                    </div>
+                    <div class="team-bar-wrapper">
+                        <div class="team-bar">
+                            <p>Профессиональное оборудование</p>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </section>
+        <section class="system-section">
+            <div class="container">
+                <div class="services-title">
+                    <h2>Все процессы уборки отцифрованы</h2>
+                    <p>В работе мы используем собственную систему по управлению задачами. Всю свою работу клинеры ведут в ней. Именно эта программа помогает нам приезжать точно в указанный срок, ни забывать о поставленных задачах во время уборки и сдавать идеально чистые помещения после профессионального клининга.</p>
+                </div>
+            </div>
+        </section>
+        <section class="steps-section">
+            <div class="container">
+                <div class="services-title">
+                    <h2>Как заказать клининговые услуги в Москве</h2>
+                    <p>Заказать профессиональную уборку в Москве и области можно в квартиру, коттедж, офис. Опытные клинеры легко справляются даже со сложными и крупными заказами. Качественная уборка требует много времени и сил. Чтобы избавиться от неприятных хлопот и добиться идеальной чистоты в доме или офисе, стоит вызывать профессиональных клинеров, работающих по Москве и области. Достаточно пройти <span>4 простых шага:</span></p>
+                </div>
+                <div class="steps-items-wrapper row">
+                    <div class="col-lg-3">
+                        <div class="steps-num">
+                            <p>01<span></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="questions-section">
+            <div class="container">
+                <h2>Часто задаваемые вопросы</h2>
+                <div class="questions-section-wrapper row">
+                    <div class="questions-section-accordion col-8">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    <span>01</span>
+                                    <p>Сколько длится уборка?</p>
+                                    <div class="accordion-header-arrow">
+                                        <img src="assets/img/accordion-arrow.webp" alt="arrow">
+                                    </div>
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content">
+                                        Text
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    <span>02</span>
+                                    <p>В чем отличие между генеральной и поддерживающей уборкой?</p>
+                                    <div class="accordion-header-arrow">
+                                        <img src="assets/img/accordion-arrow.webp" alt="arrow">
+                                    </div>
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content">
+                                        Text
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    <span>03</span>
+                                    <p>Сколько клинеров выполняют работу?</p>
+                                    <div class="accordion-header-arrow">
+                                        <img src="assets/img/accordion-arrow.webp" alt="arrow">
+                                    </div>
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content">
+                                        Text
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    <span>04</span>
+                                    <p>Должен ли клиент предоставлять инвентарь для уборки?</p>
+                                    <div class="accordion-header-arrow">
+                                        <img src="assets/img/accordion-arrow.webp" alt="arrow">
+                                    </div>
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content">
+                                        Text
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    <span>05</span>
+                                    <p>Входит ли в стоимость уборка санузла и ванной комнаты?</p>
+                                    <div class="accordion-header-arrow">
+                                        <img src="assets/img/accordion-arrow.webp" alt="arrow">
+                                    </div>
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content">
+                                        Text
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    <span>06</span>
+                                    <p>Чем отличается генеральная уборка и поддерживающяя?</p>
+                                    <div class="accordion-header-arrow">
+                                        <img src="assets/img/accordion-arrow.webp" alt="arrow">
+                                    </div>
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content">
+                                        Text
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    <span>07</span>
+                                    <p>СЧем отличается генеральная уборка и поддерживающяя?</p>
+                                    <div class="accordion-header-arrow">
+                                        <img src="assets/img/accordion-arrow.webp" alt="arrow">
+                                    </div>
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content">
+                                        Text
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questions-section-form col-4">
+                        <div class="questions-form-wrapper">
+                            <h4>Остались вопросы?</h4>
+                            <p>Напишите нам в мессенджеры и мы ответим Вам в течение 10 минут!</p>
+                            <a href="#">
+                                <button class="btn banner-btn2" style="border-radius: 12px; width: 100%;height: 67px;margin-bottom: 12px;">
+                                    <img src="assets/img/banner-whatsapp-icon.webp" alt="whatsapp">
+                                    Написать в WhatsApp
+                                </button>
+                            </a>
+                            <a href="#">
+                                <button class="btn socials-button2" style="border-radius: 12px;width: 100%;margin-bottom: 32px;">
+                                    <img src="assets/img/socials-btn2.webp" alt="socials-btn2" style="margin-right: -25px;transform: translateX(-23px);">
+                                    Написать в Telegram
+                                </button>
+                            </a>
+                            <p>или оставьте заявку на звонок</p>
+                            <form action="" class="form questions-form">
+                                <input type="text" class="questions-form-input" placeholder="Ваш номер телефона*" required> 
+                                <div class="questions-form-alert">
+                                    <label class="questions-form-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>  
+                                    <p>Нажимая кнопку, вы даете согласие на <span>обработку персональных данных</span></p>
+                                </div>                                
+                                <button class="btn questions-form-send">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="questions-section-text-wrapper">
+                    <img src="assets/img/nav-logo.webp" alt="logo">
+                    <p>Услуги клининговой компании «Клининг24» - это возможность сэкономить драгоценное время и посвятить его себе, семье, друзьям, любимому занятию или отдыху. <span>Клининговая компания «Клининг24»</span> гарантирует своим клиентам уборку на профессиональном уровне по лучшим ценам в Москве и Московской области. Порядок в квартире или загородном доме необходимо наводить регулярно, но не всегда на это хватает свободного времени, а при его появлении каждый хотел бы заняться чем-то более интересным и приятным. Тем, кто ценит свое время, стоит воспользоваться услугами клининговой компании.</p>
+                </div>
+            </div>
+        </section>
+        <section class="socials-section">
+            <div class="container">
+                <img src="assets/img/socials-img2.webp" alt="iphone" class="socials-img2">
+                <div class="socials-bar">
+                    <img src="assets/img/socials-img1.webp" alt="message" class="socials-img1">
+                    <div class="socials-text">
+                        <h3>Делимся процессом в <br> соцсетях и мессенджерах</h3>
+                        <p>Рассказываем, как мы делаем клининг. Хвастаемся компанией, 
+                        командой, нашими примерами работами и публикуем отзывы клиентов.
+                        <br><br>
+                        <span>Осторожно! Тут полезный контент.</span>
+                        </p>
+                    </div>
+                    <div class="socials-buttons-wrapper">
+                        <a href="#">
+                            <button class="btn socials-button1">
+                                <img src="assets/img/socials-btn1.webp" alt="socials-btn1">
+                                Вконтакте
+                            </button>
+                        </a>
+                        <a href="#">
+                            <button class="btn socials-button2">
+                                <img src="assets/img/socials-btn2.webp" alt="socials-btn2">
+                                Telegram
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -708,6 +1620,7 @@
                         <div class="footer-pay-bar">
                             <h6>Способы оплаты:</h6>
                             <div class="footer-pay-bar-images">
+                                <img src="assets/img/footer-pay4.webp" alt="pay">
                                 <img src="assets/img/footer-pay.webp" alt="pay">
                                 <img src="assets/img/footer-pay2.webp" alt="pay">
                                 <img src="assets/img/footer-pay3.webp" alt="pay">
@@ -735,5 +1648,20 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/accordion.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/sliders.js"></script>
+    <script src="assets/js/before-after.min.js"></script>
+    <script src="assets/js/examples.js"></script>
+    <script>
+        const slider = document.querySelector('.example-item-image-slider');
+        const afterImage = document.querySelector('.example-item-after-image');
+
+        slider.addEventListener('input', (event) => {
+            const value = event.target.value;
+            afterImage.style.clipPath = `inset(0 0 0 ${value}%)`; // Управляем видимой частью изображения "После"
+        });
+    </script>
+</body>
 </html>
