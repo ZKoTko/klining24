@@ -17,10 +17,19 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('.sales-slider').slick({
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          }
+        ]
     });
 });
 
@@ -29,6 +38,15 @@ $(document).ready(function(){
         dots: true,
         infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            }
+          ]
     });
 });
