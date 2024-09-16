@@ -279,6 +279,7 @@ body {
     font-weight: 800;
     line-height: 55px;
     margin-bottom: 24px;
+    max-width: 655px;
 }
 .banner-content h1 span {
     color: #ff8562;
@@ -1604,7 +1605,7 @@ footer {
     fill: #fff !important;
 }
 .mob-main-slider-slider-text-items-wrapper {
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 .mob-main-slider-slider-text {
@@ -3251,8 +3252,9 @@ body.no-scroll {
         display: none;
     }
     .mob-main-slider-slide-text {
-        display: block;
+        display: flex;
     }
+    
     .main-slider-wrapper .slick-track {
         height: 700px;
     }
