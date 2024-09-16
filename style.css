@@ -134,7 +134,7 @@ body {
 }
 .mid-nav__count-bar p {
     font-size: 9px;
-    color: #000;
+    color: #2f2f2f;
     margin-bottom: 0;
     font-weight: 500;
 }
@@ -194,7 +194,7 @@ body {
     margin-right: 16px;
 }
 .mid-nav__phone-info a{
-    color: #000;
+    color: #2f2f2f;
     margin-bottom: 0;
     font-size: 14px;
     font-weight: 700;
@@ -232,7 +232,7 @@ body {
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
-    color: #000;
+    color: #2f2f2f;
     padding: 21px 0;
 }
 
@@ -524,7 +524,7 @@ body {
 }
 .services-item__text p { 
     line-height: 14px;
-    color: #000000;
+    color: #2f2f2f;
     font-size: 12px;
     font-weight: 400;
     margin-bottom: 0px;
@@ -829,7 +829,7 @@ footer {
 .price-list-item {
     font-size: 14px;
     font-weight: 400;
-    color: #000;
+    color: #2f2f2f;
 }
 .price-list-item:first-child {
     font-weight: 700;
@@ -1745,7 +1745,7 @@ footer {
 .example-item-type p {
     margin-bottom: 0;
     line-height: 20px;
-    color: #000000;
+    color: #2f2f2f;
     font-size: 13px;
     font-weight: 400;
 }
@@ -2070,7 +2070,7 @@ footer {
     padding-left: 2px;
 }
 .reviews-bar-content p {
-    color: #000000;
+    color: #2f2f2f;
     font-size: 11px;
     font-weight: 500;
     margin-bottom: 0;
@@ -2078,7 +2078,7 @@ footer {
     padding-top: 2px;
 } 
 .reviews-bar-content span {
-    color: #000000;
+    color: #2f2f2f;
     font-size: 11px;
     font-weight: 400;
     padding-left: 4px;
@@ -2785,7 +2785,7 @@ body.no-scroll {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #000;
+    background-color: #2f2f2f;
     opacity: 0;
     z-index: 999;
     transition: opacity 0.3s ease; 
@@ -2845,7 +2845,7 @@ body.no-scroll {
     font-size: 14px;
     font-weight: 700;
     margin-left: 8px;
-    color: #000;
+    color: #2f2f2f;
     text-decoration: none;
 }
 .mobile-nav-items-wrapper .mid-nav__count-bar {
@@ -2864,7 +2864,7 @@ body.no-scroll {
 }
 .side-menu-content a {
     text-decoration: none;
-    color: #000;
+    color: #2f2f2f;
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 16px;
