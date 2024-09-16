@@ -3156,6 +3156,7 @@ body.no-scroll {
         margin: 0 auto;
         margin-bottom: 24px !important;
         width: fit-content;
+        max-width: 400px;
     }
     .banner-content {
         padding-top: 60px;
