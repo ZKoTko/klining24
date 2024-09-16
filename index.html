@@ -48,8 +48,8 @@
   <body>
     <div class="main-widjet">
         <div class="main-widjet-wrapper">
-            <a href="#"><img src="assets/img/nav-whatsapp.webp" alt="whatsapp"></a>
-            <a href="#"><img src="assets/img/nav-telegram.webp" alt="telegram"></a>
+            <a href="#"><img src="assets/img/nav-whatsapp.svg" alt="whatsapp"></a>
+            <a href="#"><img src="assets/img/nav-telegram.svg" alt="telegram"></a>
         </div>
     </div>
     <div class="mob-menu-burger" id="mob-menu-burger">
@@ -87,7 +87,13 @@
     <header>
         <nav class="navbar navbar-expand-lg top-nav">
         <div class="container">
-            <a class="navbar-brand " href="#"><img src="assets/img/nav-pin.webp" alt="pin">Москва, ул. Лесная, 61 ст2</a>
+            <a class="navbar-brand " href="#">
+                <img src="assets/img/nav-pin.svg" alt="pin">
+                Москва, ул. Лесная, 61 ст2
+                <img style="width: 12px;height: 12px;margin-right: 0;margin-left: 4px;"
+                src="assets/img/nav-dropdown-arrow.svg" 
+                alt="arrow">
+            </a>
             <div class="collapse navbar-collapse" id="navbarText">
             <div class="me-auto"></div>
             <ul class="navbar-nav">
@@ -104,7 +110,12 @@
                 <a class="nav-link" href="#">Вопросы</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">О компании</a>
+                <a class="nav-link" href="#">
+                    О компании
+                    <img style="width: 12px;height: 12px;margin-right: 0;margin-left: 4px;transform: translateY(-1.5px);"
+                    src="assets/img/nav-dropdown-arrow.svg" 
+                    alt="arrow">
+                </a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="#">Контакты</a>
@@ -124,7 +135,7 @@
                     <div class="mid-nav__count-bar-wrapper">
                         <div class="mid-nav__count">
                             <img src="assets/img/nav-checkmark.webp" alt="checkmark">   
-                            <p>1 295 004</p>                    
+                            <p id="counter">100 000</p>                    
                         </div>
                         <p>заказов выполнили</p>
                     </div>                    
@@ -135,8 +146,8 @@
                         <div class="mid-nav__call-active"></div>
                     </div>
                     <p>Напишите нам <br> в мессенджеры</p>
-                    <img src="assets/img/nav-whatsapp.webp" alt="whatsapp">
-                    <img src="assets/img/nav-telegram.webp" alt="telegram">
+                    <img src="assets/img/nav-whatsapp.svg" alt="whatsapp">
+                    <img src="assets/img/nav-telegram.svg" alt="telegram">
                 </div>
                 <div class="mid-nav__phone">
                     <div class="mid-nav__phone-info">
@@ -151,24 +162,51 @@
         <div class="bottom-nav">
         <div class="container">
             <div class="bottom-nav-wrapper">
-                <a href="#">Уборка квартир</a>
-                <a href="#">Уборка домов</a>
-                <a href="#">Дополнительные услуги</a>
-                <a href="#">Мойка окон</a>
-                <a href="#">Химчистка</a>
-                <a href="#">Юрлицам</a>
+                <a href="#">
+                    Уборка квартир
+                    <img style="width: 12px;height: 12px;margin-right: 0;margin-left: 4px;transform: translateY(-1.5px);"
+                    src="assets/img/nav-dropdown-arrow.svg" 
+                    alt="arrow">
+                </a>
+                <a href="#">
+                    Уборка домов
+                    <img style="width: 12px;height: 12px;margin-right: 0;margin-left: 4px;transform: translateY(-1.5px);"
+                    src="assets/img/nav-dropdown-arrow.svg" 
+                    alt="arrow">
+                </a>
+                <a href="#">
+                    Дополнительные услуги
+                    <img style="width: 12px;height: 12px;margin-right: 0;margin-left: 4px;transform: translateY(-1.5px);"
+                    src="assets/img/nav-dropdown-arrow.svg" 
+                    alt="arrow">
+                </a>
+                <a href="#">
+                    Мойка окон
+                </a>
+                <a href="#">
+                    Химчистка
+                    <img style="width: 12px;height: 12px;margin-right: 0;margin-left: 4px;transform: translateY(-1.5px);"
+                    src="assets/img/nav-dropdown-arrow.svg" 
+                    alt="arrow">
+                </a>
+                <a href="#">
+                    Юрлицам
+                    <img style="width: 12px;height: 12px;margin-right: 0;margin-left: 4px;transform: translateY(-1.5px);"
+                    src="assets/img/nav-dropdown-arrow.svg" 
+                    alt="arrow">
+                </a>
             </div>
         </div>
         </div>
         <div class="mobile-nav">
             <div class="container">
                 <div class="mobile-nav-wrapper row">
-                    <div class="col-9">
+                    <div class="col-sm-9 col-11">
                        <div class="mobile-nav-items-wrapper">
                         <a class="navbar-brand " href="#">
-                            <img src="assets/img/nav-pin.webp" alt="pin"
+                            <img src="assets/img/nav-pin.svg" alt="pin"
                             class="mobile-nav-pin">
-                            Москва, ул. Лесная, 61 ст2
+                            Москва
                         </a>
                         <div class="mid-nav__count-bar">
                             <div class="mid-nav__count-bar-wrapper count-mob-nav">
@@ -181,7 +219,7 @@
                         </div>
                        </div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-sm-9 col-11">
                         <div class="mobile-nav-items-wrapper mobile-nav-items-wrapper-low">
                             <img src="assets/img/nav-logo.webp" alt="logo">
                             <a href="#">+7 (495) 755-49-22</a>
@@ -198,7 +236,7 @@
             <div class="container">
                 <div class="banner-wrapper">
                     <div class="banner-content">
-                        <h1>Клининговая компания <br> в Москве <span>от 60 руб./м2</span></h1>
+                        <h1>Клининговая компания в Москве <span>от 60 руб./м2</span></h1>
                         <div class="banner-info-item">
                             <img src="assets/img/banner-checkmark.webp" alt="checkmark">
                             <div class="banner-info-item-text"><p>ТОП-10 лучших клининговых компаний по версии <span>Комсомольской правды</span></p></div>
@@ -434,7 +472,7 @@
                 <div class="price-section-text">
                     <p>Стоимость клининга зависит от объема и сложности работ, площади помещений, дополнительных услуг. У нас вы можете заказать следующие виды уборки квартир, домов, офисов:</p>
                     <div class="price-text-items-wrapper row">
-                        <div class="col-4">
+                        <div class="col-md-4 col-12">
                             <div class="price-text-item">
                                 <div class="price-text-item-img" style="background: url(assets/img/price-text1.webp);">
                                     <div class="price-text-item-img-num">01</div>
@@ -444,7 +482,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-md-4 col-12">
                             <div class="price-text-item">
                                 <div class="price-text-item-img" style="background: url(assets/img/price-text2.webp);">
                                     <div class="price-text-item-img-num">02</div>
@@ -454,7 +492,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-md-4 col-12">
                             <div class="price-text-item">
                                 <div class="price-text-item-img" style="background: url(assets/img/price-text3.webp);">
                                     <div class="price-text-item-img-num">03</div>
@@ -682,10 +720,110 @@
                     <p>Наш клинер приезжает в назначенное время со всем необходимым и сразу приступает к делу.</p>
                 </div>
                 <div class="main-slider-wrapper">
-                    <div class="main-slider-slide" style="background: url(assets/img/main-slide1.webp);"></div>
-                    <div class="main-slider-slide" style="background: url(assets/img/main-slide1.webp);"></div>
-                    <div class="main-slider-slide" style="background: url(assets/img/main-slide1.webp);"></div>
-                    <div class="main-slider-slide" style="background: url(assets/img/main-slide1.webp);"></div>
+                    <div class="main-slider-slide" style="background: url(assets/img/mail-slider1.webp);">
+                        <div class="main-slider-slide-markers">
+                            <div class="main-slider-marker">Обеспылим <br> фасады мебели</div>
+                            <div class="main-slider-marker">Вымоем <br> бытовую технику</div>
+                            <div class="main-slider-marker">Вымоем окна, <br> подоконники и откосы</div>
+                            <div class="main-slider-marker">Вымоем посуду и <br> столовые приборы</div>
+                            <div class="main-slider-marker">Обеспылим стены <br> и потолок</div>
+                            <div class="main-slider-marker">Постираем и <br> выгладим шторы</div>
+                            <div class="main-slider-marker">Обеспылим предметы <br> интерьера</div>
+                            <div class="main-slider-marker">Вымоем пол и <br> пропылесосим ковры</div>
+                            <div class="main-slider-marker">Обеспылим <br> осветительные приборы</div>
+                        </div>
+                        <div class="mob-main-slider-slider-text">
+                            <div class="mob-main-slider-slider-text-items-wrapper">
+                                <p>Обеспылим фасады мебели</p>
+                                <p>Вымоем бытовую технику</p>
+                                <p>Вымоем пол и пропылесосим ковры</p>
+                                <p>Обеспылим предметы интерьера</p>
+                                <p>Вымоем посуду и столовые приборы</p>
+                                <p>Вымоем окна, подоконники и откосы</p>
+                                <p>Постираем и выгладим шторы</p>
+                                <p>Обеспылим стены и потолок</p>
+                                <p>Обеспылим осветительные приборы</p>
+                            </div>                         
+                        </div>
+                    </div>
+                    <div class="main-slider-slide" style="background: url(assets/img/mail-slider1.webp);">
+                        <div class="main-slider-slide-markers">
+                            <div class="main-slider-marker">Обеспылим <br> фасады мебели</div>
+                            <div class="main-slider-marker">Вымоем <br> бытовую технику</div>
+                            <div class="main-slider-marker">Вымоем окна, <br> подоконники и откосы</div>
+                            <div class="main-slider-marker">Вымоем посуду и <br> столовые приборы</div>
+                            <div class="main-slider-marker">Обеспылим стены <br> и потолок</div>
+                            <div class="main-slider-marker">Постираем и <br> выгладим шторы</div>
+                            <div class="main-slider-marker">Обеспылим предметы <br> интерьера</div>
+                            <div class="main-slider-marker">Вымоем пол и <br> пропылесосим ковры</div>
+                            <div class="main-slider-marker">Обеспылим <br> осветительные приборы</div>
+                        </div>
+                        <div class="mob-main-slider-slider-text"></div>
+                            <div class="mob-main-slider-slider-text-items-wrapper">
+                                <p>Обеспылим фасады мебели</p>
+                                <p>Вымоем бытовую технику</p>
+                                <p>Вымоем пол и пропылесосим ковры</p>
+                                <p>Обеспылим предметы интерьера</p>
+                                <p>Вымоем посуду и столовые приборы</p>
+                                <p>Вымоем окна, подоконники и откосы</p>
+                                <p>Постираем и выгладим шторы</p>
+                                <p>Обеспылим стены и потолок</p>
+                                <p>Обеспылим осветительные приборы</p>
+                            </div>                         
+                        </div>
+                    </div>
+                    <div class="main-slider-slide" style="background: url(assets/img/mail-slider1.webp);">
+                        <div class="main-slider-slide-markers">
+                            <div class="main-slider-marker">Обеспылим <br> фасады мебели</div>
+                            <div class="main-slider-marker">Вымоем <br> бытовую технику</div>
+                            <div class="main-slider-marker">Вымоем окна, <br> подоконники и откосы</div>
+                            <div class="main-slider-marker">Вымоем посуду и <br> столовые приборы</div>
+                            <div class="main-slider-marker">Обеспылим стены <br> и потолок</div>
+                            <div class="main-slider-marker">Постираем и <br> выгладим шторы</div>
+                            <div class="main-slider-marker">Обеспылим предметы <br> интерьера</div>
+                            <div class="main-slider-marker">Вымоем пол и <br> пропылесосим ковры</div>
+                            <div class="main-slider-marker">Обеспылим <br> осветительные приборы</div>
+                        </div>
+                        <div class="mob-main-slider-slider-text">
+                            <div class="mob-main-slider-slider-text-items-wrapper">
+                                <p>Обеспылим фасады мебели</p>
+                                <p>Вымоем бытовую технику</p>
+                                <p>Вымоем пол и пропылесосим ковры</p>
+                                <p>Обеспылим предметы интерьера</p>
+                                <p>Вымоем посуду и столовые приборы</p>
+                                <p>Вымоем окна, подоконники и откосы</p>
+                                <p>Постираем и выгладим шторы</p>
+                                <p>Обеспылим стены и потолок</p>
+                                <p>Обеспылим осветительные приборы</p>
+                            </div>                         
+                        </div>
+                    </div>
+                    <div class="main-slider-slide" style="background: url(assets/img/mail-slider1.webp);">
+                        <div class="main-slider-slide-markers">
+                            <div class="main-slider-marker">Обеспылим <br> фасады мебели</div>
+                            <div class="main-slider-marker">Вымоем <br> бытовую технику</div>
+                            <div class="main-slider-marker">Вымоем окна, <br> подоконники и откосы</div>
+                            <div class="main-slider-marker">Вымоем посуду и <br> столовые приборы</div>
+                            <div class="main-slider-marker">Обеспылим стены <br> и потолок</div>
+                            <div class="main-slider-marker">Постираем и <br> выгладим шторы</div>
+                            <div class="main-slider-marker">Обеспылим предметы <br> интерьера</div>
+                            <div class="main-slider-marker">Вымоем пол и <br> пропылесосим ковры</div>
+                            <div class="main-slider-marker">Обеспылим <br> осветительные приборы</div>
+                        </div>
+                        <div class="mob-main-slider-slider-text">
+                            <div class="mob-main-slider-slider-text-items-wrapper">
+                                <p>Обеспылим фасады мебели</p>
+                                <p>Вымоем бытовую технику</p>
+                                <p>Вымоем пол и пропылесосим ковры</p>
+                                <p>Обеспылим предметы интерьера</p>
+                                <p>Вымоем посуду и столовые приборы</p>
+                                <p>Вымоем окна, подоконники и откосы</p>
+                                <p>Постираем и выгладим шторы</p>
+                                <p>Обеспылим стены и потолок</p>
+                                <p>Обеспылим осветительные приборы</p>
+                            </div>                         
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1281,7 +1419,7 @@
                     <h2>Кто будет делать уборку?</h2>
                 </div>
                 <div class="team-items-wrapper row">
-                    <div class="col-lg-6 col-xl-3 col-6">
+                    <div class="col-lg-6 col-xl-3 col-sm-6 col-12">
                         <div class="team-item">
                             <div class="team-item-image" style="background: url(assets/img/team1.webp);">
                                 <div class="team-image-rate">
@@ -1296,7 +1434,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-3 col-6">
+                    <div class="col-lg-6 col-xl-3 col-sm-6 col-12">
                         <div class="team-item">
                             <div class="team-item-image" style="background: url(assets/img/team1.webp);">
                                 <div class="team-image-rate">
@@ -1311,7 +1449,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-3 col-6">
+                    <div class="col-lg-6 col-xl-3 col-sm-6 col-12">
                         <div class="team-item">
                             <div class="team-item-image" style="background: url(assets/img/team1.webp);">
                                 <div class="team-image-rate">
@@ -1326,7 +1464,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-3 col-6">
+                    <div class="col-lg-6 col-xl-3 col-sm-6 col-12">
                         <div class="team-item">
                             <div class="team-item-image" style="background: url(assets/img/team1.webp);">
                                 <div class="team-image-rate">
@@ -1659,7 +1797,7 @@
                             <div class="accordion-item">
                                 <div class="accordion-item-header">
                                     <span>07</span>
-                                    <p>СЧем отличается генеральная уборка и поддерживающяя?</p>
+                                    <p>С Чем отличается генеральная уборка и поддерживающяя?</p>
                                     <div class="accordion-header-arrow">
                                         <img src="assets/img/accordion-arrow.webp" alt="arrow">
                                     </div>
@@ -1790,7 +1928,7 @@
                 <div class="footer-main-wrapper row">
                     <div class="footer-links col-lg-9 col-12">
                         <div class="footer-links-wrapper row">
-                            <div class="col-4">
+                            <div class="col-6 col-sm-4">
                                 <div class="footer-links-list">
                                     <p>Уборка квартир</p>
                                     <a href="#">Поддерживающая</a>
@@ -1800,7 +1938,7 @@
                                     <a href="#">После пожара</a>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-sm-4">
                                 <div class="footer-links-list">
                                     <p>Уборка домов</p>
                                     <a href="#">Коттеджи</a>
@@ -1810,7 +1948,7 @@
                                     <a href="#">Дачи</a>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-sm-4">
                                 <div class="footer-links-list">
                                     <p>Уборка офисов</p>
                                     <a href="#">Генеральня</a>
@@ -1820,7 +1958,7 @@
                                     <a href="#">На постоянной основе</a>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-sm-4">
                                 <div class="footer-links-list">
                                     <p>Допуслуги</p>
                                     <a href="#">Мытье окон</a>
@@ -1830,7 +1968,7 @@
                                     <a href="#">Уборка балконов</a>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-sm-4">
                                 <div class="footer-links-list">
                                     <p>Химчистка</p>
                                     <a href="#">Диванов</a>
@@ -1840,7 +1978,7 @@
                                     <a href="#">Матрасов</a>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-sm-4">
                                 <div class="footer-links-list">
                                     <p>Информация</p>
                                     <a href="#">Цены</a>
@@ -1869,8 +2007,8 @@
                                 </div>
                                 <p>Напишите нам <br> в мессенджеры</p>
                             </div>
-                            <img src="assets/img/nav-whatsapp.webp" alt="whatsapp">
-                            <img src="assets/img/nav-telegram.webp" alt="telegram">
+                            <img src="assets/img/nav-whatsapp.svg" alt="whatsapp">
+                            <img src="assets/img/nav-telegram.svg" alt="telegram">
                         </div>
                         <div class="footer-city">
                             <h5>Москва</h5>
@@ -1916,6 +2054,7 @@
     <script src="assets/js/before-after.min.js"></script>
     <script src="assets/js/examples.js"></script>
     <script src="assets/js/side-menu.js"></script>
+    <script src="assets/js/counter.js"></script>
     <script>
         const slider = document.querySelector('.example-item-image-slider');
         const afterImage = document.querySelector('.example-item-after-image');
