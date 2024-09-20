@@ -992,3 +992,58 @@
     margin-top: 15px;
   }
 }
+
+
+
+
+@media (max-width: 1200px) {
+  .calc-form-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .calc-price-form {
+    margin-right: 32px;
+  }
+  .custom-select-wrapper {
+    max-width: none;
+  }
+  .custom-select {
+    max-width: none;
+  }
+  .custom-range-wrapper {
+    max-width: none;
+  }
+  .range {
+    max-width: none;
+  }
+  .calc-param-title {
+    min-width: 160px;
+  }
+  .calc-price-form {
+    height: fit-content;
+  }
+  .equipment-items .col-lg-3 {
+    margin-bottom: 16px;
+  }
+  .services-page__info-img {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 992px) {
+  .mini-calc-param-item {
+    padding-left: 0;
+  }
+  .calc-pram-mini-title {
+    margin-right: 64px !important;
+  }
+  .calc-contact-form{
+    margin-top: 0;
+  }
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
