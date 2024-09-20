@@ -122,6 +122,12 @@ main {
     color: #2F2F2F !important;
     transition: all .2s linear !important;
 }
+.top-nav .selected-nav-item {
+    color: #ff8562 !important;
+}
+.selected-nav-item {
+    color: #ff8562 !important;
+}
 .top-nav .nav-link:hover {
     color: #ff8562 !important;
 }
