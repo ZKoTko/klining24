@@ -39,6 +39,7 @@ body {
     color: #2F2F2F;
     background-color: #f9f9f9;
     position: relative;
+    overflow-x: hidden !important;
 }
 
 .main-widjet-wrapper {
@@ -1464,6 +1465,7 @@ footer {
 }
 .main-slider-section {
     margin-bottom: 64px;
+    overflow-x: hidden;
 }
 .main-slider-section-title h2{
     line-height: 47px;
@@ -3988,6 +3990,7 @@ body.no-scroll {
         max-width: 280px;
     }
     .banner-items-wrapper {
+        overflow: hidden;
         overflow-y: scroll;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -4056,6 +4059,7 @@ body.no-scroll {
         line-height: unset;
     }
     .services-items-wrapper {
+        overflow: hidden;
         overflow-y: scroll;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -4147,6 +4151,7 @@ body.no-scroll {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        overflow: hidden;
         overflow-y: scroll;
         width: 105%;
         justify-content: flex-start;
@@ -4200,6 +4205,7 @@ body.no-scroll {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        overflow: hidden;
         overflow-y: scroll;
         width: 105%;
         justify-content: flex-start;
@@ -4367,6 +4373,7 @@ body.no-scroll {
     .reviews-videos-wrapper {
         display: flex;
         flex-direction: row;
+        overflow: hidden;
         overflow-y: scroll;
         flex-wrap: nowrap;
         padding: 0 8px;
@@ -4387,6 +4394,7 @@ body.no-scroll {
     .mob-reviews-slider {
         display: flex;
         flex-direction: row;
+        overflow: hidden;
         overflow-y: scroll;
         flex-wrap: nowrap;
         padding: 0 8px;
