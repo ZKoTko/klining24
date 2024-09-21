@@ -2688,5 +2688,48 @@
     <script src="assets/js/side-menu.js"></script>
     <script src="assets/js/counter.js"></script>
     <script src="assets/js/service-page.js"></script>
+    <script>
+     document.addEventListener('DOMContentLoaded', () => {
+        const thItems = document.querySelectorAll('.mob-tables__tableRow_th-item');
+        const allTableRows = document.querySelectorAll('.tables__tableRow');
+
+        // Изначально показываем второй элемент в каждом блоке .tables__tableRow
+        allTableRows.forEach((tableRow) => {
+            const tableItems = tableRow.querySelectorAll('.tables__tableItm');
+            tableItems.forEach((item, index) => {
+            if (index === 1) { // Показ второго элемента по умолчанию
+                item.classList.add('flex', 'tables__tableItm-show');
+            } else {
+                item.classList.remove('flex', 'tables__tableItm-show');
+            }
+            });
+        });
+
+        // Добавляем активный класс первому элементу при загрузке
+        thItems[0].classList.add('active-mob-tales-th');
+
+        thItems.forEach((thItem, index) => {
+            thItem.addEventListener('click', () => {
+            // Убираем активные классы со всех кнопок
+            thItems.forEach(item => item.classList.remove('active-mob-tales-th'));
+
+            // Добавляем класс активной кнопке
+            thItem.classList.add('active-mob-tales-th');
+
+            // Проходим по всем блокам .tables__tableRow и переключаем соответствующие элементы
+            allTableRows.forEach((tableRow) => {
+                const tableItems = tableRow.querySelectorAll('.tables__tableItm');
+                tableItems.forEach((item, i) => {
+                if (i === index + 1) { // Показываем соответствующий элемент в каждом блоке
+                    item.classList.add('flex', 'tables__tableItm-show');
+                } else {
+                    item.classList.remove('flex', 'tables__tableItm-show');
+                }
+                });
+            });
+            });
+        });
+        });
+    </script>
 </body>
 </html>
