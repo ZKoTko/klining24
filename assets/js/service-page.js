@@ -61,3 +61,34 @@ plusButton.addEventListener('click', () => {
         inputNumber.value = value + 1;
     }
 });
+
+
+
+
+document.querySelectorAll('.custom-select-wrapper').forEach(wrapper => {
+    const selectElement = wrapper.querySelector('.custom-select');
+    const triggerElement = wrapper.querySelector('.custom-select-trigger');
+    const customOptions = wrapper.querySelectorAll('.custom-option'); // Теперь выбираем напрямую .custom-option
+
+    // Открываем или закрываем кастомный селект
+    triggerElement.addEventListener('click', function () {
+        wrapper.classList.toggle('open');
+    });
+
+    // Обрабатываем клики по кастомным элементам
+    customOptions.forEach(option => {
+        option.addEventListener('click', function() {
+            const value = this.getAttribute('data-value'); // Получаем значение напрямую из data-value
+            selectElement.value = value; // Изменяем значение в оригинальном селекте
+            triggerElement.textContent = this.textContent; // Обновляем текст триггера
+            wrapper.classList.remove('open');
+        });
+    });
+
+    // Закрываем кастомный селект при клике вне его области
+    window.addEventListener('click', function(e) {
+        if (!wrapper.contains(e.target)) {
+            wrapper.classList.remove('open');
+        }
+    });
+});

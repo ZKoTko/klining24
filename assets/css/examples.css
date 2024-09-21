@@ -42,3 +42,11 @@
     display: flex;
     justify-content: center;
 }
+.example-item {
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.example-items-wrapper .col-lg-6 {
+    margin-bottom: 16px;
+}

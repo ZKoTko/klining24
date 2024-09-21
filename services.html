@@ -51,7 +51,7 @@
         .tables__unMark {
             background: url(assets/img/unMark.svg) center no-repeat;
         }
-        .custom-select-wrapper::after {
+        .custom-select-trigger::after {
             background-image: url(assets/img/accordion-arrow.webp);
         }
     </style>
@@ -868,16 +868,28 @@
                                     <option value="2">Дом</option>
                                     <option value="3">Офис</option>
                                 </select>
+                                <div class="custom-select-trigger">Квартира</div>
+                                <div class="custom-options">
+                                    <div class="custom-option" data-value="1">Квартира</div>
+                                    <div class="custom-option" data-value="2">Дом</div>
+                                    <div class="custom-option" data-value="3">Офис</div>
+                                </div>
                             </div>
                         </div>
                         <div class="calc-param-item">
                             <div class="calc-param-title">Тип уборки:</div>
                             <div class="custom-select-wrapper">
                                 <select class="custom-select">
-                                    <option value="1">Поддерживающая</option>
-                                    <option value="2">Поддерживающая</option>
-                                    <option value="3">Поддерживающая</option>
+                                    <option value="1">Квартира</option>
+                                    <option value="2">Дом</option>
+                                    <option value="3">Офис</option>
                                 </select>
+                                <div class="custom-select-trigger">Квартира</div>
+                                <div class="custom-options">
+                                    <div class="custom-option" data-value="1">Квартира</div>
+                                    <div class="custom-option" data-value="2">Дом</div>
+                                    <div class="custom-option" data-value="3">Офис</div>
+                                </div>
                             </div>
                         </div>
                         <div class="calc-param-item">
@@ -908,12 +920,18 @@
                                     <div class="calc-param-title">Степень загрязнения:</div>
                                     <div class="custom-select-wrapper" style="max-width: 230px;">
                                         <select class="custom-select">
-                                            <option value="1">Грязная</option>
-                                            <option value="2">Грязная</option>
-                                            <option value="3">Грязная</option>
+                                            <option value="1">Квартира</option>
+                                            <option value="2">Дом</option>
+                                            <option value="3">Офис</option>
                                         </select>
+                                        <div class="custom-select-trigger">Квартира</div>
+                                        <div class="custom-options">
+                                            <div class="custom-option" data-value="1">Квартира</div>
+                                            <div class="custom-option" data-value="2">Дом</div>
+                                            <div class="custom-option" data-value="3">Офис</div>
+                                        </div>
                                     </div>
-                                </div>
+                                    </div>
                             </div>
                             <div class="col-lg-5 col-12">
                                 <div class="calc-param-item mini-calc-param-item">
@@ -926,6 +944,8 @@
                                 </div>
                             </div>
                         </div>
+                            
+                        
                         <div class="calc-param-item" style="align-items: flex-start;">
                             <div class="calc-param-title">Дополнительные услуги:</div>
                             <div class="calc-adds-wrapper">
