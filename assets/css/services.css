@@ -544,7 +544,9 @@
   width: 0;
   
 }
-
+.mob-tables__tableRow_th {
+  display: none;
+}
 .range__thumb {
   width: 40px;
   height: 40px;
@@ -993,104 +995,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1024px) {
-  .tables {
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-  .tables__tableWrp {
-    overflow: auto;
-    padding-bottom: 20px;
-  }
-  .tables__table {
-    margin-top: 20px;
-    min-width: 600px;
-  }
-  .tables__table_twoCols {
-    min-width: unset;
-  }
-  .tables__table_twoCols .tables__tableItm:first-child {
-    width: 50%;
-  }
-  .tables__table_twoCols .tables__tableItm:nth-child(2) {
-    width: 50%;
-  }
-  .tables__table_twoCols .tables__tableRow {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .tables__table_twoCols .tables__tableRow_th .tables__tableItm:first-child {
-    display: unset;
-  }
-  .tables__tableRow {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding: 6px 0;
-  }
-  .tables__tableRow_th {
-    padding: 6px 0;
-    -webkit-box-shadow: unset;
-            box-shadow: unset;
-    background: unset;
-    border-radius: unset;
-    margin: 0;
-  }
-  .tables__tableRow_th .tables__tableItm:first-child {
-    display: none;
-  }
-  .tables__tableRow_prices,
-  .tables__tableRow_btns {
-    display: none;
-  }
-  .tables__tableItm:first-child {
-    width: 100%;
-    font-weight: 700;
-  }
-  .tables__tableItm:nth-child(2) {
-    width: 31%;
-  }
-  .tables__tableItm:nth-child(3) {
-    width: 31%;
-  }
-  .tables__tableItm:last-child {
-    width: 31%;
-  }
-}
-@media screen and (max-width: 500px) {
-  .tables__desc h2,
-  .tables__desc h3 {
-    font-size: 22px;
-    margin: 0 0 15px 0;
-  }
-  .tables__desc p {
-    margin-bottom: 15px;
-  }
-  .tables__desc p:last-child {
-    margin-bottom: unset;
-  }
-  .tables__desc ul {
-    margin: 15px 0;
-  }
-  .tables__desc ul li + li {
-    margin-top: 15px;
-  }
-}
-
-
-
-
 @media (max-width: 1200px) {
   .calc-form-wrapper {
     display: flex;
@@ -1143,8 +1047,179 @@
   }
   .calc-param-title {
     margin-bottom: 16px;
+    margin-right: 0;
+    max-width: none;
+    width: fit-content;
+  }
+  .custom-range-wrapper {
+    margin-top: 8px;
+  }
+  .calc-form-wrapper {
+    flex-direction: column;
+    padding-left: 30px;
   }
 }
 @media (max-width: 576px) {
-
+  .calc-form-wrapper {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .calc-section {
+    max-width: 380px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+  }
+  .calc-title {
+    line-height: 34px;
+    font-size: 22px;
+  }
+  .calc-param-title {
+    margin-bottom: 8px;
+  }
+  .custom-select-wrapper {
+    max-width: none !important;
+  }
+  .calc-price-form {
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+  .calc-contact-form {
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .equipment-item h6 {
+    line-height: 15px;
+    font-size: 12px;
+    color: #ff8562;
+    font-weight: 600;
+  }
+  .equipment-item p {
+    line-height: 16px;
+    font-size: 12px;
+  }
+  .equipment-item {
+    padding: 8px;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  .equipment-item-img {
+    height: 140px;
+  }
+  .equipment-item-text {
+    padding-left: 4px;
+  }
+  .equipment-section .services-title h2 {
+    line-height: 29px;
+    font-size: 22px;
+  }
+  .equipment-section .services-title p {
+    line-height: 22px;
+    font-size: 14px;
+  }
+  .equipment-items .col-lg-3 {
+    padding: 0 4px;
+    margin-bottom: 8px;
+  }
+  .calc-price-form-finish strong {
+    font-size: 10px;
+  }
+  .calc-price-form {
+    padding: 20px 16px;
+  }
+  .calc-price-form-sale p {
+    max-width: 160px;
+  }
+  .services-page__info-img {
+    height: 240px;
+  }
+  .services-page__info-wrapper {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .services-page__info-section {
+    margin-bottom: 64px;
+  }
+  .equipment-items  {
+    padding: 0 8px;
+  }
+  .tables__buttons-wrapper {
+    flex-direction: column;
+  }
+  .tables__openTableBtn {
+    margin-right: 0;
+    margin-bottom: 12px;
+    font-size: 13px;
+    max-width: 325px;
+    width: 100% !important;
+    height: 75px !important;
+  }
+  .tables__buttons-wrapper .banner-btn2 {
+    max-width: 325px !important;
+    min-width: 325px !important;
+    width: 100% !important;
+    height: 75px !important;
+    font-size: 13px;
+  }
+  .tables__buttons-wrapper .banner-btn2 img {
+    width: 30px !important;
+    height: 30px !important;
+    margin-left: -16px;
+  }
+  .price-section .container {
+    padding: 0 !important;
+  }
+  .price-section-title, .price-section-text {
+    padding: 0 12px !important;
+  }
+  .tables__table {
+    border-radius: 0 !important;
+  }
+  .tables__tableRow {
+    padding: 4px 8px;
+  }
+  .tables__tableRow_th {
+    display: none;
+  }
+  .tables__tableItm:first-child {
+    width: 63%;
+  }
+  .tables__tableItm:nth-child(2) {
+    width: 37%;
+    padding-right: 0;
+    padding-left: 16px;
+  }
+  .tables__tableItm:nth-child(3) {
+    display: none;
+    width: 37%;
+    padding-right: 0;
+    padding-left: 16px;
+  }
+  .tables__tableItm:last-child {
+    display: none;
+    width: 37%;
+    padding-right: 0;
+    padding-left: 16px;
+  }
+  .mob-tables__tableRow_th {
+    display: flex;
+    overflow-x: scroll;
+    padding-bottom: 24px;
+  }
+  .mob-tables__tableRow_th-item {
+    background-color: #ffffff;
+    border-radius: 12px !important;
+    box-shadow: 0px 5px 20px -3px rgba(176, 176, 176, 0.4);
+    color: #2f2f2f;
+    font-size: 12px;
+    line-height: 19px;
+    font-weight: 700;
+    padding: 16px 20px;
+    width: fit-content;
+    text-wrap: nowrap;
+    margin-right: 8px;
+    height: 44px;
+  }
 }

@@ -50,3 +50,7 @@
 .example-items-wrapper .col-lg-6 {
     margin-bottom: 16px;
 }
+
+.example-slider .handle {
+    height: 350px;
+}

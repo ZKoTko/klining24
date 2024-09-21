@@ -444,9 +444,12 @@ main {
     padding-top: 30px;
 }
 
+.bottom-nav-dropdown5 .bottom-nav-dropdown-items {
+    padding: 16px 20px !important;
+}
 .top-nav-dropdown a {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     color: #2f2f2f;
     padding: 21px 0;
@@ -4008,8 +4011,7 @@ body.no-scroll {
         max-width: 280px;
     }
     .banner-items-wrapper {
-        overflow: hidden;
-        overflow-y: scroll;
+        overflow-x: scroll;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: flex-start;
@@ -4077,8 +4079,7 @@ body.no-scroll {
         line-height: unset;
     }
     .services-items-wrapper {
-        overflow: hidden;
-        overflow-y: scroll;
+        overflow-x: scroll;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: flex-start;
@@ -4169,8 +4170,7 @@ body.no-scroll {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        overflow: hidden;
-        overflow-y: scroll;
+        overflow-x: scroll;
         width: 105%;
         justify-content: flex-start;
         padding-right: 8px;
@@ -4223,8 +4223,7 @@ body.no-scroll {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        overflow: hidden;
-        overflow-y: scroll;
+        overflow-x: scroll;
         width: 105%;
         justify-content: flex-start;
         padding-right: 16px;
@@ -4363,7 +4362,6 @@ body.no-scroll {
     .sales-mobile-list {
         display: flex;
         flex-direction: row;
-        overflow: hidden;
         overflow-x: scroll;
         width: 100%;
     }
@@ -4391,8 +4389,7 @@ body.no-scroll {
     .reviews-videos-wrapper {
         display: flex;
         flex-direction: row;
-        overflow: hidden;
-        overflow-y: scroll;
+        overflow-x: scroll;
         flex-wrap: nowrap;
         padding: 0 8px;
     }
@@ -4412,8 +4409,7 @@ body.no-scroll {
     .mob-reviews-slider {
         display: flex;
         flex-direction: row;
-        overflow: hidden;
-        overflow-y: scroll;
+        overflow-x: scroll;
         flex-wrap: nowrap;
         padding: 0 8px;
         padding-left: 0;
