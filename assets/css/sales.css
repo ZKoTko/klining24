@@ -11,3 +11,8 @@
 .sales__page-items .col-12 {
     margin-bottom: 24px;
 }
+@media (max-width: 576px) {
+    .sales__page-content {
+        padding-top: 60px;
+    }
+}

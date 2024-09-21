@@ -1,3 +1,6 @@
+.price-section {
+  overflow: hidden;
+}
 .price-section-text p {
     font-size: 14px;
     line-height: 20px;
@@ -1230,5 +1233,15 @@
   .active-mob-tales-th {
     background: #ff8562;
     color: #fff;
+  }
+  .banner-content h1 {
+    margin: 0;
+        margin-bottom: 24px !important;
+  }
+  .services-page__info-text p {
+    font-size: 13px;
+  }
+  .tables__table {
+    padding-top: 32px;
   }
 }

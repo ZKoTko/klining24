@@ -130,3 +130,11 @@
 .questions-form-wrapper {
     height: 100%;
 }
+
+
+
+@media (max-width: 576px) {
+    .contact__page-content {
+        padding-top: 60px;
+    }
+}

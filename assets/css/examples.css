@@ -54,3 +54,44 @@
 .example-slider .handle {
     height: 350px;
 }
+
+@media (max-width:1200px) {
+    .example-slider .handle {
+        height: 300px;
+    }
+    
+    .example-item-image {
+        height: 300px;
+    }
+}
+@media (max-width: 768px) {
+    .example-slider .handle {
+        height: 250px;
+    }
+    
+    .example-item-image {
+        height: 250px;
+    }
+}
+@media (max-width: 576px) {
+    .example-slider .handle {
+        height: 215px;
+    }
+    .example-slider img {
+        width: 100%;
+    }
+    .example-item-image {
+        height: 215px;
+    }
+    .example-items-wrapper {
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    .example-item {
+        max-width: none;
+    }
+    .examples__page-content {
+        padding-top: 60px;
+    }
+}

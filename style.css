@@ -4644,4 +4644,13 @@ body.no-scroll {
     meta[name=format-detection] {
         format-detection: telephone=no !important;
     }
+    .banner-breadcrumb {
+        top: 100px;
+        padding-left: 16px;
+    }
+    .standart-page-title {
+        padding-left: 16px;
+        font-size: 25px;
+        margin-bottom: 48px;
+    }
 }
