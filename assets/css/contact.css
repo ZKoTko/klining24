@@ -132,7 +132,42 @@
 }
 
 
+@media (max-width: 1200px) {
+    .contact__items-wrapper {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .contact__info-bar {
+        margin-bottom: 32px;
+    }
+    .questions-form-wrapper p {
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .questions-form-alert p {
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 992px) {
+    .contact__map-wrapper {
+        height: 350px;
+    }
+    .contact__info-table{
+        width: 100%;
+        overflow-x: scroll;
+        text-wrap: nowrap;
+      
+    }
+    .contact__info-wrapper {
+        overflow: hidden;
+    }
 
+    .contact__info-row h6 {
+        width: 300px;
+        min-width: 300px;
+    }
+}
 @media (max-width: 576px) {
     .contact__page-content {
         padding-top: 60px;
