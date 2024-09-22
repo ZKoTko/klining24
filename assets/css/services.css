@@ -188,7 +188,7 @@
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: start;
   padding: 4px 34px;
   position: relative;
 }

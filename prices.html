@@ -1,0 +1,2114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/before-after.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+    <link rel="stylesheet" href="assets/css/price.css">
+    <style>
+        .banner {
+            background: url(assets/img/services/services-banner.webp);
+        }
+        .questions-form-checkbox input:checked + .checkmark {
+            background-color: transparent;
+            background-image: url(assets/img/questions-form-check.webp);
+            background-size: cover;
+            background-position: center;
+        }
+        .main-slider-wrapper .slick-prev::before {
+            background: url(assets/img/main-slider-prev.svg);
+        }
+        .main-slider-wrapper .slick-next::before {
+            background: url(assets/img/main-slider-next.svg);
+        }
+        .sales-slider .slick-prev::before {
+            background: url(assets/img/main-slider-prev.svg);
+        }
+        .sales-slider .slick-next::before {
+            background: url(assets/img/main-slider-next.svg);
+        }
+        .reviews-slider .slick-prev::before {
+            background: url(assets/img/main-slider-prev.svg);
+        }
+        .reviews-slider .slick-next::before {
+            background: url(assets/img/main-slider-next.svg);
+        }
+        .reasons-section {
+            background: url(assets/img/reasons-bg.webp);
+        }
+        .example-slider .handle:after {
+            background-image: url(assets/img/example-slider-arrow.webp);
+        }
+        .tables__mark {
+            background: url(assets/img/questions-form-check.webp) center no-repeat;
+        }
+        .tables__unMark {
+            background: url(assets/img/unMark.svg) center no-repeat;
+        }
+        .custom-select-wrapper::after {
+            background-image: url(assets/img/accordion-arrow.webp);
+        }
+    </style>
+</head>
+  <body>
+    <div class="main-widjet">
+        <div class="main-widjet-wrapper">
+            <a href="#"><img src="assets/img/nav-whatsapp.svg" alt="whatsapp"></a>
+            <a href="#"><img src="assets/img/nav-telegram.svg" alt="telegram"></a>
+        </div>
+    </div>
+    <div class="mob-menu-burger" id="mob-menu-burger">
+        <div class="mob-menu-burger-wrapper">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div id="side-menu">
+        <div class="close-btn-wrapper">
+            <div id="closeButton">
+                <div class="closeButton-icon">
+                   <img src="assets/img/close-menu-btn.webp" alt="close">
+                </div>
+            </div>
+        </div>
+        <div class="side-menu-content">           
+            <a href="services.html">Уборка квартир</a>
+            <a href="#">Уборка домов</a>
+            <a href="#">Дополнительные услуги</a>
+            <a href="#">Мойка окон</a>
+            <a href="#">Химчистка</a>
+            <a href="#">Юрлицам</a>
+            <a href="#">Цены</a>
+            <a href="#">Наши работы</a>
+            <a href="#">Акции</a>
+            <a href="#">Вопросы</a>
+            <a href="#">О компании</a>
+            <a href="#">Контакты</a>
+        </div>
+    </div>  
+    <div class="side-menu-filter"></div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg top-nav">
+        <div class="container">
+            <a class="navbar-brand " href="#">
+                <img src="assets/img/nav-pin.svg" alt="pin">
+                Москва, ул. Лесная, 61 ст2
+                <img style="width: 12px;height: 12px;margin-right: 0;margin-left: 8px;"
+                src="assets/img/nav-dropdown-arrow.svg" 
+                alt="arrow">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarText">
+            <div class="me-auto"></div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Цены</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="examples.html">Наши работы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link selected-nav-item" href="#"><img src="assets/img/nav-light.webp" alt="light">Акции</a>
+                </li> 
+                <li class="nav-item">
+                <a class="nav-link" href="#">Вопросы</a>
+                </li>
+                <li class="nav-item">            
+                <div class="bottom-nav-item bottom-nav-item5">
+                    <a class="nav-link" href="#">
+                        О компании
+                        <img style="width: 12px;height: 12px;margin-right: 0;margin-left: 4px;transform: translateY(-1.5px);"
+                        src="assets/img/nav-dropdown-arrow.svg" 
+                        alt="arrow">
+                    </a>
+                    <div class="bottom-nav-dropdown bottom-nav-dropdown5">
+                        <div class="bottom-nav-dropdown-items row">
+                            <div class="col-12 bottom-nav-dropdown-list top-nav-dropdown">
+                                <a href="#">Цены</a>
+                                <a href="#">Наши работы</a>
+                                <a href="#">Отзывы</a>
+                                <a href="#">Акции</a>
+                                <a href="#">FAQ</a>
+                                <a href="#">Сертификаты</a>
+                                <a href="#">Гарантии</a>
+                                <a href="#">Вакансии</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="contact.html">Контакты</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+        <div class="mid-nav">
+        <div class="container">
+            <div class="mid-nav-wrapper">
+                <div class="mid-nav__logo">
+                    <a href="index.html"><img src="assets/img/nav-logo.png" alt="logo"></a>
+                    <p>Клининг квартир, домов, <br> офисов в Москве и МО</p>
+                </div>
+                <div class="mid-nav__count-bar">
+                    <div class="mid-nav__count-bar-wrapper">
+                        <div class="mid-nav__count">
+                            <img src="assets/img/nav-checkmark.webp" alt="checkmark">   
+                            <p id="counter">100 000</p>                    
+                        </div>
+                        <p>заказов выполнили</p>
+                    </div>                    
+                </div>
+                <div class="mid-nav__call">
+                    <div class="mid-nav__call-img">
+                        <img src="assets/img/operator.webp" alt="operator">
+                        <div class="mid-nav__call-active"></div>
+                    </div>
+                    <p>Напишите нам <br> в мессенджеры</p>
+                    <img src="assets/img/nav-whatsapp.svg" alt="whatsapp">
+                    <img src="assets/img/nav-telegram.svg" alt="telegram">
+                </div>
+                <div class="mid-nav__phone">
+                    <div class="mid-nav__phone-info">
+                        <a href="#">+7 (495) 755-49-22</a>
+                        <p>Ежедневно с 9:00-21:00</p>
+                    </div>
+                    <button class="btn mid-nav__phone-btn">Заказать звонок</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="bottom-nav">
+        <div class="container">
+            <div class="bottom-nav-wrapper">             
+                <div class="bottom-nav-item bottom-nav-item1">
+                    <a href="services.html" class="bottom-nav-link1">
+                        Уборка квартир
+                        <img style="width: 12px;height: 12px;margin-right: 0;margin-left: 4px;transform: translateY(-1.5px);"
+                        src="assets/img/nav-dropdown-arrow.svg" 
+                        alt="arrow">
+                    </a>
+                    <div class="bottom-nav-dropdown bottom-nav-dropdown1">
+                        <div class="bottom-nav-dropdown-items row">
+                            <div class="col-6 bottom-nav-dropdown-list">
+                                <a href="#">Генеральная</a>
+                                <a href="#">После ремонта</a>
+                                <a href="#">Комплексная</a>
+                                <a href="#">Ежедневная</a>
+                                <a href="#">Поддерживающая</a>
+                                <a href="#">Влажная</a>
+                                <a href="#">Срочная уборка</a>
+                                <a href="#">Еженедельная</a>
+                                <a href="#">Два раза в неделю</a>
+                                <a href="#">Три раза в неделю</a>
+                                <a href="#">Эко уборка</a>
+                                <a href="#">Запущенных квартир</a>
+                                <a href="#">Однокомнатной</a>
+                            </div>
+                            <div class="col-6 bottom-nav-dropdown-list">
+                                <a href="#">Двухкомнатной</a>
+                                <a href="#">Трёхкомнатной</a>
+                                <a href="#">Четырёхкомнатной</a>
+                                <a href="#">VIP уборка</a>
+                                <a href="#">Перед рождением</a>
+                                <a href="#">После переезда</a>
+                                <a href="#">После дезинфекции</a>
+                                <a href="#">Перед заселением</a>
+                                <a href="#">После аренды</a>
+                                <a href="#">После потопа</a>
+                                <a href="#">После пожара</a>
+                                <a href="#">После смерти</a>
+                                <a href="#">Элитных квартир</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom-nav-item bottom-nav-item2">
+                    <a href="#" class="bottom-nav-link2">
+                        Уборка домов
+                        <img style="width: 12px;height: 12px;margin-right: 0;margin-left: 4px;transform: translateY(-1.5px);"
+                        src="assets/img/nav-dropdown-arrow.svg" 
+                        alt="arrow">
+                    </a>
+                    <div class="bottom-nav-dropdown bottom-nav-dropdown2">
+                        <div class="bottom-nav-dropdown-items row">
+                            <div class="col-12 bottom-nav-dropdown-list">
+                                <a href="#">После ремонта</a>
+                                <a href="#">Поддерживающая</a>
+                                <a href="#">Коттеджей</a>
+                                <a href="#">Таунхауса</a>
+                                <a href="#">Дачи</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom-nav-item bottom-nav-item3">
+                    <a href="#" class="bottom-nav-link3">
+                        Дополнительные услуги
+                        <img style="width: 12px;height: 12px;margin-right: 0;margin-left: 4px;transform: translateY(-1.5px);"
+                        src="assets/img/nav-dropdown-arrow.svg" 
+                        alt="arrow">
+                    </a>
+                    <div class="bottom-nav-dropdown bottom-nav-dropdown3">
+                        <div class="bottom-nav-dropdown-items row">
+                            <div class="col-12 bottom-nav-dropdown-list">
+                                <a href="#">Мытье окон</a>
+                                <a href="#">Уборка шерсти</a>
+                                <a href="#">Уборка санузлов</a>
+                                <a href="#">Уборка кухни</a>
+                                <a href="#">Уборка балконов</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="#" class="bottom-nav-link4">
+                    Мойка окон
+                </a>
+
+                <div class="bottom-nav-item bottom-nav-item7">
+                    <a href="#" class="bottom-nav-link7">
+                        Химчистка
+                        <img style="width: 12px;height: 12px;margin-right: 0;margin-left: 4px;transform: translateY(-1.5px);"
+                        src="assets/img/nav-dropdown-arrow.svg" 
+                        alt="arrow">
+                    </a>
+                    <div class="bottom-nav-dropdown bottom-nav-dropdown7">
+                        <div class="bottom-nav-dropdown-items row">
+                            <div class="col-12 bottom-nav-dropdown-list">
+                                <a href="#">Диванов</a>
+                                <a href="#">Мягкой мебели</a>
+                                <a href="#">Стульев</a>
+                                <a href="#">Ковров</a>
+                                <a href="#">Матрасов</a>
+                                <a href="#">Штор</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom-nav-item bottom-nav-item6">
+                    <a href="#" class="bottom-nav-link6">
+                        Юрлицам
+                        <img style="width: 12px;height: 12px;margin-right: 0;margin-left: 4px;transform: translateY(-1.5px);"
+                        src="assets/img/nav-dropdown-arrow.svg" 
+                        alt="arrow">
+                    </a>
+                    <div class="bottom-nav-dropdown bottom-nav-dropdown6">
+                        <div class="bottom-nav-dropdown-items row" style="padding-bottom: 32px;justify-content: center;">
+                            <div class="col-3 bottom-nav-dropdown-list" style="width: fit-content;padding-right: 64px;">
+                                <a href="#" class="bottom-nav-dropdown-list-strong">Уборка офисов</a>
+                                <a href="#">Генеральная</a>
+                                <a href="#">После ремонта</a>
+                                <a href="#">Поддерживающая</a>
+                                <a href="#">На постоянной основе</a>
+                                <a href="#">Ежедневная</a>
+                                <a href="#">Утренняя</a>
+                                <a href="#">Вечерняя</a>
+                                <a href="#">Разовая уборка</a>
+                                <a href="#">Влажная уборка</a>
+                                <a href="#">Мытье окон в офисе</a>
+                                <a href="#">Химчистка мебели</a>
+                                <a href="#">Дезинфекция</a>
+                            </div>
+                            <div class="col-3 bottom-nav-dropdown-list" style="padding-left: 32px;">
+                                <a href="#" class="bottom-nav-dropdown-list-strong">Уборка помещений</a>
+                                <a href="#">Дезинфекция</a>
+                                <a href="#">Салонов красоты</a>
+                                <a href="#">На мероприятиях</a>
+                                <a href="#">Торговых центров</a>
+                                <a href="#">Паркинга</a>
+                                <a href="#">Школ</a>
+                                <a href="#">Детских садов и ДОУ</a>
+                                <a href="#">Ресторанов и кафе</a>
+                                <a href="#">Влажная уборка</a>
+                                <a href="#">Магазинов</a>
+                                <a href="#">Гостиниц и отелей</a>
+                            </div>
+                            <div class="col-3 bottom-nav-dropdown-list nav-dropdown-list-padding">
+                                <a href="#">Производственных помещений</a>
+                                <a href="#">Учебных заведений</a>
+                                <a href="#">Фитнес клубов</a>
+                                <a href="#">Служебных помещений</a>
+                                <a href="#">Бизнес-центров</a>
+                                <a href="#">Автосалонов</a>
+                                <a href="#">Бани и сауны</a>
+                                <a href="#">Медицинских учреждений</a>
+                                <a href="#">Складских помещений</a>
+                                <a href="#">Подъездов домов</a>
+                                <a href="#">Нежилых</a>
+                            </div>
+                            <div class="col-3 bottom-nav-dropdown-list" style="padding-left: 32px;">
+                                <a href="#" class="bottom-nav-dropdown-list-strong">Дополнительно</a>
+                                <a href="#">Покос травы</a>
+                                <a href="#">Промышленный альпинизм</a>
+                                <a href="#">Мойка витрин</a>
+                                <a href="#">Мойка вывесок</a>
+                                <a href="#">Мойка фасадов</a>
+                                <a href="#">Уборка снега</a>
+                                <a href="#">Уборка бассейнов</a>
+                                <a href="#">Прилегающей территории</a>
+                                <a href="#">Механизированная уборка</a>
+                                <a href="#">Химчистка автомобилей</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>               
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="banner-breadcrumb">
+                <p><span>Главная</span> / Цены</p>
+            </div>
+        </div>
+
+        <div class="mobile-nav">
+            <div class="container">
+                <div class="mobile-nav-wrapper row">
+                    <div class="col-sm-9 col-11">
+                        <div class="mobile-nav-items-wrapper mobile-nav-items-wrapper-low">
+                            <img src="assets/img/nav-logo.png" alt="logo">
+                            <a href="#">+7 (495) 755-49-22</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="price__page-content">
+
+            <div class="container">
+                <h1 class="standart-page-title">Цены</h1>
+                <div class="price__page-heading">
+                    <h2>Прайс-лист на уборку квартир</h2>
+                    <p>Добро пожаловать на страницу Цены, где вашему вниманию предлагается подробный прайс-лист клининговых услуг компании Клининг24. Здесь вы найдете самую исчерпывающую информацию по стоимости наших услуг для физических и юридических лиц.</p>
+                        <p>Прайс-лист разработан таким образом, чтобы отражать все потребности клиентов, будь то ежедневная уборка офиса или генеральная чистка жилого помещения.
+                        Мы гордимся своей репутацией надежного партнера и гарантируем, что каждая услуга, указанная в прайс-листе, будет выполнена на высшем уровне.</p>
+                        <h2>Клининг: цены услуг</h2>
+                        <p>Для вашего удобства информация опубликована по видам уборки, методам ее проведения, типам помещений и оказываемым услугам в рамках наведения чистоты и порядка в каждой функциональной зоне.</p>
+                        <h3>В стоимость клининга входит: </h3>
+                        1.	Доставка оборудования, инвентаря и средств для оказания клининговых услуг по адресу. Заказчику не нужно ничего предоставлять. В Клининг24 есть все необходимое профессиональное оборудование для уборки.<br>
+                        2.	Соблюдение мер безопасности и обеспечение сохранности имущества на период проведения работ. У нас работают надежные и добросовестные сотрудники. Вы можете передать нам ключи от жилья и ни о чем не беспокоиться.<br>
+                        3.	Использование гипоаллергенных средств, но при этом эффективных против всех видов загрязнений. Мы подбираем методы уборки и выполняем ее, отталкиваясь от того, какие поверхности нужно очищать и какие дополнительные задачи перед нами стоят.<br>
+                        4.	Аккуратность, пунктуальность, профессионализм. Ни одна поверхность не будет повреждена, зато чистоту и порядок мы гарантируем. Клинеры приедут вовремя, будут вежливы и заинтересованы в том, чтобы вы остались довольны.<br>
+                        5.	Работа на результат. В зависимости от выбранного типа уборки и согласованного перечня дополнительных услуг, мы выполним весь комплекс работ с безупречным качеством и точно в срок.<br><br>
+                        <p>Время выполнения работ зависит от того, какой тип клининговых услуг вы выбрали, какая площадь помещений нуждается в наведении чистоты, и какие есть дополнительные задачи.
+                        Отметим, что дополнительно мы готовы оказать вам любые сопутствующие услуги, от уборки придомовой территории и мойки панорамных окон, вплоть до глажки белья и стирки штор с их снятием, а также навеской после завершения работ.</p>
+                    
+                </div>
+            </div>
+                
+            <!--Table 1-->
+            <div class="price-table-wrapper">
+                <div class="tables__mainWrapper tables__mainWrapper_visHid hidden">
+                    <div class="tables__tableWrp">
+                        <div class="tables__table tables__table_fourCols nmt">
+                            <div class="tables__tableRow tables__tableRow_th">
+                                <div class="tables__tableItm">Кв. м</div>
+                                <div class="tables__tableItm">Поддерживающая</div>
+                                <div class="tables__tableItm">Генеральная</div>                   
+                                <div class="tables__tableItm">После ремонта</div>                
+                            </div>
+                            <div class="mob-tables__tableRow_th">
+                                <div class="mob-tables__tableRow_th-item">
+                                    Поддерживающая
+                                </div>
+                                <div class="mob-tables__tableRow_th-item">
+                                    Генеральная
+                                </div>
+                                <div class="mob-tables__tableRow_th-item">
+                                    После ремонта
+                                </div>
+                            </div>
+                            <!--Main rows-->
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">30</div>
+                                <div class="tables__tableItm">от 3500</div>
+                                <div class="tables__tableItm">от 6500</div> 
+                                <div class="tables__tableItm">от 6500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">35</div>
+                                <div class="tables__tableItm">от 3500</div>
+                                <div class="tables__tableItm">от 6500</div> 
+                                <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">30</div>
+                                <div class="tables__tableItm">от 3500</div>
+                                <div class="tables__tableItm">от 6500</div> 
+                                <div class="tables__tableItm">от 6500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">35</div>
+                                <div class="tables__tableItm">от 3500</div>
+                                <div class="tables__tableItm">от 6500</div> 
+                                <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">30</div>
+                                <div class="tables__tableItm">от 3500</div>
+                                <div class="tables__tableItm">от 6500</div> 
+                                <div class="tables__tableItm">от 6500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                            <div class="tables__tableItm">35</div>
+                            <div class="tables__tableItm">от 3500</div>
+                            <div class="tables__tableItm">от 6500</div> 
+                            <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                            <div class="tables__tableItm">30</div>
+                            <div class="tables__tableItm">от 3500</div>
+                            <div class="tables__tableItm">от 6500</div> 
+                            <div class="tables__tableItm">от 6500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                            <div class="tables__tableItm">35</div>
+                            <div class="tables__tableItm">от 3500</div>
+                            <div class="tables__tableItm">от 6500</div> 
+                            <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">30</div>
+                                <div class="tables__tableItm">от 3500</div>
+                                <div class="tables__tableItm">от 6500</div> 
+                                <div class="tables__tableItm">от 6500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                            <div class="tables__tableItm">35</div>
+                            <div class="tables__tableItm">от 3500</div>
+                            <div class="tables__tableItm">от 6500</div> 
+                            <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                            <div class="tables__tableItm">30</div>
+                            <div class="tables__tableItm">от 3500</div>
+                            <div class="tables__tableItm">от 6500</div> 
+                            <div class="tables__tableItm">от 6500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                            <div class="tables__tableItm">35</div>
+                            <div class="tables__tableItm">от 3500</div>
+                            <div class="tables__tableItm">от 6500</div> 
+                            <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">30</div>
+                                <div class="tables__tableItm">от 3500</div>
+                                <div class="tables__tableItm">от 6500</div> 
+                                <div class="tables__tableItm">от 6500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                            <div class="tables__tableItm">35</div>
+                            <div class="tables__tableItm">от 3500</div>
+                            <div class="tables__tableItm">от 6500</div> 
+                            <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                            <div class="tables__tableItm">30</div>
+                            <div class="tables__tableItm">от 3500</div>
+                            <div class="tables__tableItm">от 6500</div> 
+                            <div class="tables__tableItm">от 6500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                            <div class="tables__tableItm">35</div>
+                            <div class="tables__tableItm">от 3500</div>
+                            <div class="tables__tableItm">от 6500</div> 
+                            <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+                <p class="price-table-lower-text">
+                    Внимание! Цены на услуги не являются окончательными. Точную стоимость уточняйте у менеджеров компании Клининг24.
+                </p>
+                <div class="price-table-lower-show-btn-wrapper">
+                    <button class="btn price-table-lower-show-btn tables__openTableBtn1">
+                        Что входит в уборку
+                    </button>
+                </div>
+                <!--Table 1 bottom-->
+                <div class="tables__tableWrp price-table-wrapper-bot">
+                    <h2 class="price-table-wrapper-bot-title">Что входит в уборку квартир</h2>
+                    <div class="tables__table tables__table_fourCols nmt">
+                        <div class="tables__tableRow tables__tableRow_th">
+                            <div class="tables__tableItm">Что входит в уборку</div>
+                            <div class="tables__tableItm">Поддерживающая</div>
+                            <div class="tables__tableItm">Генеральная</div>                   
+                            <div class="tables__tableItm">После ремонта</div>                
+                        </div>
+                        <div class="mob-tables__tableRow_th">
+                            <div class="mob-tables__tableRow_th-item">
+                                Поддерживающая
+                            </div>
+                            <div class="mob-tables__tableRow_th-item">
+                                Генеральная
+                            </div>
+                            <div class="mob-tables__tableRow_th-item">
+                                После ремонта
+                            </div>
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Цена</div>
+                            <div class="tables__tableItm">от 60 руб./м2</div>
+                            <div class="tables__tableItm">от 120 руб./м2</div> 
+                            <div class="tables__tableItm">от 140 руб./м2</div>
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Время</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>                    
+                            <div class="tables__tableItm">от 2,5 ч</div>                  
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm"><b>Комната:</b></div>
+                            <div class="tables__tableItm"></div>
+                            <div class="tables__tableItm"></div> 
+                            <div class="tables__tableItm"></div>
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Разложим вещи по местам</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>  
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Застелим кровать</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div> 
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Обработаем оргтехнику</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Протрем подоконники</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Цена</div>
+                            <div class="tables__tableItm">от 500₽</div>
+                            <div class="tables__tableItm">от 120 руб./м2</div>
+                            <div class="tables__tableItm">от 140 руб./м2</div>                  
+                        </div>     
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Время</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>                  
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm"><b>Прихожая:</b></div>
+                            <div class="tables__tableItm"></div>
+                            <div class="tables__tableItm"></div> 
+                            <div class="tables__tableItm"></div>
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Разложим вещи по местам</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Застелим кровать</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Обработаем оргтехнику</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Протрем подоконники</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>    
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Цена</div>
+                            <div class="tables__tableItm">от 500₽</div>
+                            <div class="tables__tableItm">от 120 руб./м2</div>
+                            <div class="tables__tableItm">от 140 руб./м2</div>                  
+                            </div>     
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">Время</div>
+                                <div class="tables__tableItm">от 2,5 ч</div>
+                                <div class="tables__tableItm">от 2,5 ч</div>
+                                <div class="tables__tableItm">от 2,5 ч</div>                  
+                            </div>  
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm"><b>Прихожая:</b></div>
+                                <div class="tables__tableItm"></div>
+                                <div class="tables__tableItm"></div> 
+                                <div class="tables__tableItm"></div>
+                            </div>
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">Разложим вещи по местам</div>
+                                <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                                <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                                <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                            </div>   
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">Застелим кровать</div>
+                                <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                                <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                                <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                            </div>   
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">Обработаем оргтехнику</div>
+                                <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                                <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                                <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                            </div>  
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">Протрем подоконники</div>
+                                <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                                <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                                <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                            </div>   
+                            <div class="tables__tableRow">
+                            <div class="tables__tableItm">Цена</div>
+                            <div class="tables__tableItm">от 500₽</div>
+                            <div class="tables__tableItm">от 120 руб./м2</div>
+                            <div class="tables__tableItm">от 140 руб./м2</div>                  
+                        </div>     
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Время</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>                  
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm"><b>Прихожая:</b></div>
+                            <div class="tables__tableItm"></div>
+                            <div class="tables__tableItm"></div> 
+                            <div class="tables__tableItm"></div>
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Разложим вещи по местам</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Застелим кровать</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Обработаем оргтехнику</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Протрем подоконники</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Цена</div>
+                            <div class="tables__tableItm">от 500₽</div>
+                            <div class="tables__tableItm">от 120 руб./м2</div>
+                            <div class="tables__tableItm">от 140 руб./м2</div>                  
+                        </div>     
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Время</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>                  
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm"><b>Прихожая:</b></div>
+                            <div class="tables__tableItm"></div>
+                            <div class="tables__tableItm"></div> 
+                            <div class="tables__tableItm"></div>
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Разложим вещи по местам</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Застелим кровать</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Обработаем оргтехнику</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Протрем подоконники</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>                            
+                    </div>
+                </div> 
+            </div>
+
+            <!--Table 2-->
+            <div class="price-table-wrapper">
+                <h2 class="price-table-wrapper-bot-title">Цены на уборку домов, коттеджей, таунхаусов, дач</h2>
+                <div class="tables__mainWrapper tables__mainWrapper_visHid hidden">
+                    <div class="tables__tableWrp">
+                        <div class="tables__table tables__table_fourCols nmt">
+                            <div class="tables__tableRow tables__tableRow_th">
+                                <div class="tables__tableItm">Кв. м</div>
+                                <div class="tables__tableItm">Поддерживающая</div>
+                                <div class="tables__tableItm">Генеральная</div>                   
+                                <div class="tables__tableItm">После ремонта</div>                
+                            </div>
+                            <div class="mob-tables__tableRow_th">
+                                <div class="mob-tables__tableRow_th-item">
+                                    Поддерживающая
+                                </div>
+                                <div class="mob-tables__tableRow_th-item">
+                                    Генеральная
+                                </div>
+                                <div class="mob-tables__tableRow_th-item">
+                                    После ремонта
+                                </div>
+                            </div>
+                            <!--Main rows-->
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">30</div>
+                                <div class="tables__tableItm">от 3500</div>
+                                <div class="tables__tableItm">от 6500</div> 
+                                <div class="tables__tableItm">от 6500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">35</div>
+                                <div class="tables__tableItm">от 3500</div>
+                                <div class="tables__tableItm">от 6500</div> 
+                                <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">30</div>
+                                <div class="tables__tableItm">от 3500</div>
+                                <div class="tables__tableItm">от 6500</div> 
+                                <div class="tables__tableItm">от 6500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">35</div>
+                                <div class="tables__tableItm">от 3500</div>
+                                <div class="tables__tableItm">от 6500</div> 
+                                <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">30</div>
+                                <div class="tables__tableItm">от 3500</div>
+                                <div class="tables__tableItm">от 6500</div> 
+                                <div class="tables__tableItm">от 6500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                            <div class="tables__tableItm">35</div>
+                            <div class="tables__tableItm">от 3500</div>
+                            <div class="tables__tableItm">от 6500</div> 
+                            <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                            <div class="tables__tableItm">30</div>
+                            <div class="tables__tableItm">от 3500</div>
+                            <div class="tables__tableItm">от 6500</div> 
+                            <div class="tables__tableItm">от 6500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                            <div class="tables__tableItm">35</div>
+                            <div class="tables__tableItm">от 3500</div>
+                            <div class="tables__tableItm">от 6500</div> 
+                            <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">30</div>
+                                <div class="tables__tableItm">от 3500</div>
+                                <div class="tables__tableItm">от 6500</div> 
+                                <div class="tables__tableItm">от 6500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                            <div class="tables__tableItm">35</div>
+                            <div class="tables__tableItm">от 3500</div>
+                            <div class="tables__tableItm">от 6500</div> 
+                            <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                            <div class="tables__tableItm">30</div>
+                            <div class="tables__tableItm">от 3500</div>
+                            <div class="tables__tableItm">от 6500</div> 
+                            <div class="tables__tableItm">от 6500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                            <div class="tables__tableItm">35</div>
+                            <div class="tables__tableItm">от 3500</div>
+                            <div class="tables__tableItm">от 6500</div> 
+                            <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">30</div>
+                                <div class="tables__tableItm">от 3500</div>
+                                <div class="tables__tableItm">от 6500</div> 
+                                <div class="tables__tableItm">от 6500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                            <div class="tables__tableItm">35</div>
+                            <div class="tables__tableItm">от 3500</div>
+                            <div class="tables__tableItm">от 6500</div> 
+                            <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                            <div class="tables__tableItm">30</div>
+                            <div class="tables__tableItm">от 3500</div>
+                            <div class="tables__tableItm">от 6500</div> 
+                            <div class="tables__tableItm">от 6500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                            <div class="tables__tableItm">35</div>
+                            <div class="tables__tableItm">от 3500</div>
+                            <div class="tables__tableItm">от 6500</div> 
+                            <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+                <p class="price-table-lower-text">
+                    Внимание! Цены на услуги не являются окончательными. Точную стоимость уточняйте у менеджеров компании Клининг24.
+                </p>
+                <div class="price-table-lower-show-btn-wrapper">
+                    <button class="btn price-table-lower-show-btn tables__openTableBtn1">
+                        Что входит в уборку
+                    </button>
+                </div>
+                <!--Table 2 bottom-->
+                <div class="tables__tableWrp price-table-wrapper-bot">
+                    <h2 class="price-table-wrapper-bot-title">Что входит в уборку квартир</h2>
+                    <div class="tables__table tables__table_fourCols nmt">
+                        <div class="tables__tableRow tables__tableRow_th">
+                            <div class="tables__tableItm">Что входит в уборку</div>
+                            <div class="tables__tableItm">Поддерживающая</div>
+                            <div class="tables__tableItm">Генеральная</div>                   
+                            <div class="tables__tableItm">После ремонта</div>                
+                        </div>
+                        <div class="mob-tables__tableRow_th">
+                            <div class="mob-tables__tableRow_th-item">
+                                Поддерживающая
+                            </div>
+                            <div class="mob-tables__tableRow_th-item">
+                                Генеральная
+                            </div>
+                            <div class="mob-tables__tableRow_th-item">
+                                После ремонта
+                            </div>
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Цена</div>
+                            <div class="tables__tableItm">от 60 руб./м2</div>
+                            <div class="tables__tableItm">от 120 руб./м2</div> 
+                            <div class="tables__tableItm">от 140 руб./м2</div>
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Время</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>                    
+                            <div class="tables__tableItm">от 2,5 ч</div>                  
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm"><b>Комната:</b></div>
+                            <div class="tables__tableItm"></div>
+                            <div class="tables__tableItm"></div> 
+                            <div class="tables__tableItm"></div>
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Разложим вещи по местам</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>  
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Застелим кровать</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div> 
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Обработаем оргтехнику</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Протрем подоконники</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Цена</div>
+                            <div class="tables__tableItm">от 500₽</div>
+                            <div class="tables__tableItm">от 120 руб./м2</div>
+                            <div class="tables__tableItm">от 140 руб./м2</div>                  
+                        </div>     
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Время</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>                  
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm"><b>Прихожая:</b></div>
+                            <div class="tables__tableItm"></div>
+                            <div class="tables__tableItm"></div> 
+                            <div class="tables__tableItm"></div>
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Разложим вещи по местам</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Застелим кровать</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Обработаем оргтехнику</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Протрем подоконники</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>    
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Цена</div>
+                            <div class="tables__tableItm">от 500₽</div>
+                            <div class="tables__tableItm">от 120 руб./м2</div>
+                            <div class="tables__tableItm">от 140 руб./м2</div>                  
+                            </div>     
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">Время</div>
+                                <div class="tables__tableItm">от 2,5 ч</div>
+                                <div class="tables__tableItm">от 2,5 ч</div>
+                                <div class="tables__tableItm">от 2,5 ч</div>                  
+                            </div>  
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm"><b>Прихожая:</b></div>
+                                <div class="tables__tableItm"></div>
+                                <div class="tables__tableItm"></div> 
+                                <div class="tables__tableItm"></div>
+                            </div>
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">Разложим вещи по местам</div>
+                                <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                                <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                                <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                            </div>   
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">Застелим кровать</div>
+                                <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                                <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                                <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                            </div>   
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">Обработаем оргтехнику</div>
+                                <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                                <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                                <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                            </div>  
+                            <div class="tables__tableRow">
+                                <div class="tables__tableItm">Протрем подоконники</div>
+                                <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                                <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                                <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                            </div>   
+                            <div class="tables__tableRow">
+                            <div class="tables__tableItm">Цена</div>
+                            <div class="tables__tableItm">от 500₽</div>
+                            <div class="tables__tableItm">от 120 руб./м2</div>
+                            <div class="tables__tableItm">от 140 руб./м2</div>                  
+                        </div>     
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Время</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>                  
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm"><b>Прихожая:</b></div>
+                            <div class="tables__tableItm"></div>
+                            <div class="tables__tableItm"></div> 
+                            <div class="tables__tableItm"></div>
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Разложим вещи по местам</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Застелим кровать</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Обработаем оргтехнику</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Протрем подоконники</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Цена</div>
+                            <div class="tables__tableItm">от 500₽</div>
+                            <div class="tables__tableItm">от 120 руб./м2</div>
+                            <div class="tables__tableItm">от 140 руб./м2</div>                  
+                        </div>     
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Время</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>                  
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm"><b>Прихожая:</b></div>
+                            <div class="tables__tableItm"></div>
+                            <div class="tables__tableItm"></div> 
+                            <div class="tables__tableItm"></div>
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Разложим вещи по местам</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Застелим кровать</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Обработаем оргтехнику</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Протрем подоконники</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>                            
+                    </div>
+                </div> 
+            </div>
+
+            <!--Table 3-->
+            <div class="price-table-wrapper">
+                <h2 class="price-table-wrapper-bot-title">Цены на уборку домов, коттеджей, таунхаусов, дач</h2>
+                <div class="tables__mainWrapper tables__mainWrapper_visHid hidden">
+                    <div class="tables__tableWrp">
+                      <div class="tables__table tables__table_fourCols nmt">
+                            <div class="tables__tableRow tables__tableRow_th">
+                              <div class="tables__tableItm">Кв. м</div>
+                              <div class="tables__tableItm">Поддерживающая</div>
+                              <div class="tables__tableItm">Генеральная</div>                               
+                            </div>
+                            <div class="mob-tables__tableRow_th">
+                                <div class="mob-tables__tableRow_th-item">
+                                    Поддерживающая
+                                </div>
+                                <div class="mob-tables__tableRow_th-item">
+                                    Генеральная
+                                </div>
+                            </div>
+                            <!--Main rows-->
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">30</div>
+                              <div class="tables__tableItm">от 3500</div>
+                              <div class="tables__tableItm">от 6500</div> 
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">35</div>
+                              <div class="tables__tableItm">от 3500</div>
+                              <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">30</div>
+                              <div class="tables__tableItm">от 3500</div>
+                              <div class="tables__tableItm">от 6500</div> 
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">35</div>
+                              <div class="tables__tableItm">от 3500</div>
+                              <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">30</div>
+                              <div class="tables__tableItm">от 3500</div>
+                              <div class="tables__tableItm">от 6500</div> 
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">35</div>
+                              <div class="tables__tableItm">от 3500</div>
+                              <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">30</div>
+                              <div class="tables__tableItm">от 3500</div>
+                              <div class="tables__tableItm">от 6500</div> 
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">35</div>
+                              <div class="tables__tableItm">от 3500</div>
+                              <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">30</div>
+                              <div class="tables__tableItm">от 3500</div>
+                              <div class="tables__tableItm">от 6500</div> 
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">35</div>
+                              <div class="tables__tableItm">от 3500</div>
+                              <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">30</div>
+                              <div class="tables__tableItm">от 3500</div>
+                              <div class="tables__tableItm">от 6500</div> 
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">35</div>
+                              <div class="tables__tableItm">от 3500</div>
+                              <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">30</div>
+                              <div class="tables__tableItm">от 3500</div>
+                              <div class="tables__tableItm">от 6500</div> 
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">35</div>
+                              <div class="tables__tableItm">от 3500</div>
+                              <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">30</div>
+                              <div class="tables__tableItm">от 3500</div>
+                              <div class="tables__tableItm">от 6500</div> 
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">35</div>
+                              <div class="tables__tableItm">от 3500</div>
+                              <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">30</div>
+                              <div class="tables__tableItm">от 3500</div>
+                              <div class="tables__tableItm">от 6500</div> 
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">35</div>
+                              <div class="tables__tableItm">от 3500</div>
+                              <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">30</div>
+                              <div class="tables__tableItm">от 3500</div>
+                              <div class="tables__tableItm">от 6500</div> 
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">35</div>
+                              <div class="tables__tableItm">от 3500</div>
+                              <div class="tables__tableItm">от 6500</div>                 
+                            </div>
+                      </div>
+                    </div>                      
+                </div>
+                <p class="price-table-lower-text">
+                    Внимание! Цены на услуги не являются окончательными. Точную стоимость уточняйте у менеджеров компании Клининг24.
+                </p>
+                <div class="price-table-lower-show-btn-wrapper">
+                    <button class="btn price-table-lower-show-btn tables__openTableBtn1">
+                        Что входит в уборку
+                    </button>
+                </div>
+                <!--Table 3 bottom-->
+                <div class="tables__tableWrp price-table-wrapper-bot">
+                    <h2 class="price-table-wrapper-bot-title">Что входит в уборку квартир</h2>
+                    <div class="tables__table tables__table_fourCols nmt">
+                        <div class="tables__tableRow tables__tableRow_th">
+                          <div class="tables__tableItm">Что входит в уборку</div>
+                          <div class="tables__tableItm">Поддерживающая</div>
+                          <div class="tables__tableItm">Генеральная</div>                   
+                           <div class="tables__tableItm">После ремонта</div>                
+                        </div>
+                        <div class="mob-tables__tableRow_th">
+                            <div class="mob-tables__tableRow_th-item">
+                                Поддерживающая
+                            </div>
+                            <div class="mob-tables__tableRow_th-item">
+                                Генеральная
+                            </div>
+                            <div class="mob-tables__tableRow_th-item">
+                                После ремонта
+                            </div>
+                        </div>
+                        <div class="tables__tableRow">
+                          <div class="tables__tableItm">Цена</div>
+                          <div class="tables__tableItm">от 60 руб./м2</div>
+                          <div class="tables__tableItm">от 120 руб./м2</div> 
+                          <div class="tables__tableItm">от 140 руб./м2</div>
+                        </div>
+                        <div class="tables__tableRow">
+                          <div class="tables__tableItm">Время</div>
+                          <div class="tables__tableItm">от 2,5 ч</div>
+                          <div class="tables__tableItm">от 2,5 ч</div>                    
+                          <div class="tables__tableItm">от 2,5 ч</div>                  
+                        </div>
+                        <div class="tables__tableRow">
+                          <div class="tables__tableItm"><b>Комната:</b></div>
+                          <div class="tables__tableItm"></div>
+                          <div class="tables__tableItm"></div> 
+                          <div class="tables__tableItm"></div>
+                        </div>
+                        <div class="tables__tableRow">
+                          <div class="tables__tableItm">Разложим вещи по местам</div>
+                          <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                          <div class="tables__tableItm"><div class="tables__mark"></div></div>  
+                          <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>
+                        <div class="tables__tableRow">
+                          <div class="tables__tableItm">Застелим кровать</div>
+                          <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                          <div class="tables__tableItm"><div class="tables__mark"></div></div> 
+                          <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>
+                        <div class="tables__tableRow">
+                          <div class="tables__tableItm">Обработаем оргтехнику</div>
+                          <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                          <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                          <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>
+                        <div class="tables__tableRow">
+                          <div class="tables__tableItm">Протрем подоконники</div>
+                          <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                          <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                          <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>
+                        <div class="tables__tableRow">
+                          <div class="tables__tableItm">Цена</div>
+                          <div class="tables__tableItm">от 500₽</div>
+                          <div class="tables__tableItm">от 120 руб./м2</div>
+                          <div class="tables__tableItm">от 140 руб./м2</div>                  
+                        </div>     
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Время</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>                  
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm"><b>Прихожая:</b></div>
+                            <div class="tables__tableItm"></div>
+                            <div class="tables__tableItm"></div> 
+                            <div class="tables__tableItm"></div>
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Разложим вещи по местам</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Застелим кровать</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Обработаем оргтехнику</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Протрем подоконники</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>    
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Цена</div>
+                            <div class="tables__tableItm">от 500₽</div>
+                            <div class="tables__tableItm">от 120 руб./м2</div>
+                            <div class="tables__tableItm">от 140 руб./м2</div>                  
+                          </div>     
+                          <div class="tables__tableRow">
+                              <div class="tables__tableItm">Время</div>
+                              <div class="tables__tableItm">от 2,5 ч</div>
+                              <div class="tables__tableItm">от 2,5 ч</div>
+                              <div class="tables__tableItm">от 2,5 ч</div>                  
+                          </div>  
+                          <div class="tables__tableRow">
+                              <div class="tables__tableItm"><b>Прихожая:</b></div>
+                              <div class="tables__tableItm"></div>
+                              <div class="tables__tableItm"></div> 
+                              <div class="tables__tableItm"></div>
+                          </div>
+                          <div class="tables__tableRow">
+                              <div class="tables__tableItm">Разложим вещи по местам</div>
+                              <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                              <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                              <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                          </div>   
+                          <div class="tables__tableRow">
+                              <div class="tables__tableItm">Застелим кровать</div>
+                              <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                              <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                              <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                          </div>   
+                          <div class="tables__tableRow">
+                              <div class="tables__tableItm">Обработаем оргтехнику</div>
+                              <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                              <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                              <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                          </div>  
+                          <div class="tables__tableRow">
+                              <div class="tables__tableItm">Протрем подоконники</div>
+                              <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                              <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                              <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                          </div>   
+                          <div class="tables__tableRow">
+                          <div class="tables__tableItm">Цена</div>
+                          <div class="tables__tableItm">от 500₽</div>
+                          <div class="tables__tableItm">от 120 руб./м2</div>
+                          <div class="tables__tableItm">от 140 руб./м2</div>                  
+                        </div>     
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Время</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>                  
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm"><b>Прихожая:</b></div>
+                            <div class="tables__tableItm"></div>
+                            <div class="tables__tableItm"></div> 
+                            <div class="tables__tableItm"></div>
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Разложим вещи по местам</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Застелим кровать</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Обработаем оргтехнику</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Протрем подоконники</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                          <div class="tables__tableItm">Цена</div>
+                          <div class="tables__tableItm">от 500₽</div>
+                          <div class="tables__tableItm">от 120 руб./м2</div>
+                          <div class="tables__tableItm">от 140 руб./м2</div>                  
+                        </div>     
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Время</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>                  
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm"><b>Прихожая:</b></div>
+                            <div class="tables__tableItm"></div>
+                            <div class="tables__tableItm"></div> 
+                            <div class="tables__tableItm"></div>
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Разложим вещи по местам</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Застелим кровать</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Обработаем оргтехнику</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Протрем подоконники</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>                            
+                  </div>
+                </div> 
+            </div>
+
+             <!--Table 4-->
+             <div class="price-table-wrapper">
+                <h2 class="price-table-wrapper-bot-title">Цены на уборку домов, коттеджей, таунхаусов, дач</h2>
+                <div class="tables__mainWrapper tables__mainWrapper_visHid hidden">
+                    <div class="tables__tableWrp">
+                      <div class="tables__table tables__table_fourCols nmt">
+                            <div class="tables__tableRow tables__tableRow_th">
+                              <div class="tables__tableItm">Кв. м</div>
+                              <div class="tables__tableItm">Поддерживающая</div>                             
+                            </div>
+                            <div class="mob-tables__tableRow_th">
+                                <div class="mob-tables__tableRow_th-item">
+                                    Поддерживающая
+                                </div>
+                            </div>
+                            <!--Main rows-->
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">Витрины кафе, ресторанов, магазинов</div>
+                              <div class="tables__tableItm">от 3500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">Витрины кафе, ресторанов, магазинов</div>
+                              <div class="tables__tableItm">от 3500</div>              
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">Витрины кафе, ресторанов, магазинов</div>
+                              <div class="tables__tableItm">от 3500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">Трехстворчатое (с двух сторон)</div>
+                              <div class="tables__tableItm">от 300 руб./м2</div>               
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">30</div>
+                              <div class="tables__tableItm">от 300 руб./м2</div>
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">35</div>
+                              <div class="tables__tableItm">от 3500</div>             
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">30</div>
+                              <div class="tables__tableItm">от 3500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">35</div>
+                              <div class="tables__tableItm">от 3500</div>              
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">30</div>
+                              <div class="tables__tableItm">от 3500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">35</div>
+                              <div class="tables__tableItm">от 3500</div>               
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">30</div>
+                              <div class="tables__tableItm">от 3500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">35</div>
+                              <div class="tables__tableItm">от 3500</div>             
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">30</div>
+                              <div class="tables__tableItm">от 3500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">35</div>
+                              <div class="tables__tableItm">от 3500</div>              
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">30</div>
+                              <div class="tables__tableItm">от 3500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">35</div>
+                              <div class="tables__tableItm">от 3500</div>               
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">30</div>
+                              <div class="tables__tableItm">от 3500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">35</div>
+                              <div class="tables__tableItm">от 3500</div>             
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">30</div>
+                              <div class="tables__tableItm">от 3500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">35</div>
+                              <div class="tables__tableItm">от 3500</div>              
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">30</div>
+                              <div class="tables__tableItm">от 3500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">35</div>
+                              <div class="tables__tableItm">от 3500</div>               
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">30</div>
+                              <div class="tables__tableItm">от 3500</div>
+                            </div>
+                            <div class="tables__tableRow">
+                              <div class="tables__tableItm">35</div>
+                              <div class="tables__tableItm">от 3500</div>             
+                            </div>
+                      </div>
+                    </div>                      
+                </div>
+                <p class="price-table-lower-text">
+                    Внимание! Цены на услуги не являются окончательными. Точную стоимость уточняйте у менеджеров компании Клининг24.
+                </p>
+                <div class="price-table-lower-show-btn-wrapper">
+                    <button class="btn price-table-lower-show-btn tables__openTableBtn1">
+                        Что входит в уборку
+                    </button>
+                </div>
+                <!--Table 4 bottom-->
+                <div class="tables__tableWrp price-table-wrapper-bot">
+                    <h2 class="price-table-wrapper-bot-title">Что входит в уборку квартир</h2>
+                    <div class="tables__table tables__table_fourCols nmt">
+                        <div class="tables__tableRow tables__tableRow_th">
+                          <div class="tables__tableItm">Что входит в уборку</div>
+                          <div class="tables__tableItm">Поддерживающая</div>
+                          <div class="tables__tableItm">Генеральная</div>                   
+                           <div class="tables__tableItm">После ремонта</div>                
+                        </div>
+                        <div class="mob-tables__tableRow_th">
+                            <div class="mob-tables__tableRow_th-item">
+                                Поддерживающая
+                            </div>
+                            <div class="mob-tables__tableRow_th-item">
+                                Генеральная
+                            </div>
+                            <div class="mob-tables__tableRow_th-item">
+                                После ремонта
+                            </div>
+                        </div>
+                        <div class="tables__tableRow">
+                          <div class="tables__tableItm">Цена</div>
+                          <div class="tables__tableItm">от 60 руб./м2</div>
+                          <div class="tables__tableItm">от 120 руб./м2</div> 
+                          <div class="tables__tableItm">от 140 руб./м2</div>
+                        </div>
+                        <div class="tables__tableRow">
+                          <div class="tables__tableItm">Время</div>
+                          <div class="tables__tableItm">от 2,5 ч</div>
+                          <div class="tables__tableItm">от 2,5 ч</div>                    
+                          <div class="tables__tableItm">от 2,5 ч</div>                  
+                        </div>
+                        <div class="tables__tableRow">
+                          <div class="tables__tableItm"><b>Комната:</b></div>
+                          <div class="tables__tableItm"></div>
+                          <div class="tables__tableItm"></div> 
+                          <div class="tables__tableItm"></div>
+                        </div>
+                        <div class="tables__tableRow">
+                          <div class="tables__tableItm">Разложим вещи по местам</div>
+                          <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                          <div class="tables__tableItm"><div class="tables__mark"></div></div>  
+                          <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>
+                        <div class="tables__tableRow">
+                          <div class="tables__tableItm">Застелим кровать</div>
+                          <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                          <div class="tables__tableItm"><div class="tables__mark"></div></div> 
+                          <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>
+                        <div class="tables__tableRow">
+                          <div class="tables__tableItm">Обработаем оргтехнику</div>
+                          <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                          <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                          <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>
+                        <div class="tables__tableRow">
+                          <div class="tables__tableItm">Протрем подоконники</div>
+                          <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                          <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                          <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>
+                        <div class="tables__tableRow">
+                          <div class="tables__tableItm">Цена</div>
+                          <div class="tables__tableItm">от 500₽</div>
+                          <div class="tables__tableItm">от 120 руб./м2</div>
+                          <div class="tables__tableItm">от 140 руб./м2</div>                  
+                        </div>     
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Время</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>                  
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm"><b>Прихожая:</b></div>
+                            <div class="tables__tableItm"></div>
+                            <div class="tables__tableItm"></div> 
+                            <div class="tables__tableItm"></div>
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Разложим вещи по местам</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Застелим кровать</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Обработаем оргтехнику</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Протрем подоконники</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>    
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Цена</div>
+                            <div class="tables__tableItm">от 500₽</div>
+                            <div class="tables__tableItm">от 120 руб./м2</div>
+                            <div class="tables__tableItm">от 140 руб./м2</div>                  
+                          </div>     
+                          <div class="tables__tableRow">
+                              <div class="tables__tableItm">Время</div>
+                              <div class="tables__tableItm">от 2,5 ч</div>
+                              <div class="tables__tableItm">от 2,5 ч</div>
+                              <div class="tables__tableItm">от 2,5 ч</div>                  
+                          </div>  
+                          <div class="tables__tableRow">
+                              <div class="tables__tableItm"><b>Прихожая:</b></div>
+                              <div class="tables__tableItm"></div>
+                              <div class="tables__tableItm"></div> 
+                              <div class="tables__tableItm"></div>
+                          </div>
+                          <div class="tables__tableRow">
+                              <div class="tables__tableItm">Разложим вещи по местам</div>
+                              <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                              <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                              <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                          </div>   
+                          <div class="tables__tableRow">
+                              <div class="tables__tableItm">Застелим кровать</div>
+                              <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                              <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                              <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                          </div>   
+                          <div class="tables__tableRow">
+                              <div class="tables__tableItm">Обработаем оргтехнику</div>
+                              <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                              <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                              <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                          </div>  
+                          <div class="tables__tableRow">
+                              <div class="tables__tableItm">Протрем подоконники</div>
+                              <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                              <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                              <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                          </div>   
+                          <div class="tables__tableRow">
+                          <div class="tables__tableItm">Цена</div>
+                          <div class="tables__tableItm">от 500₽</div>
+                          <div class="tables__tableItm">от 120 руб./м2</div>
+                          <div class="tables__tableItm">от 140 руб./м2</div>                  
+                        </div>     
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Время</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>                  
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm"><b>Прихожая:</b></div>
+                            <div class="tables__tableItm"></div>
+                            <div class="tables__tableItm"></div> 
+                            <div class="tables__tableItm"></div>
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Разложим вещи по местам</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Застелим кровать</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Обработаем оргтехнику</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Протрем подоконники</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                          <div class="tables__tableItm">Цена</div>
+                          <div class="tables__tableItm">от 500₽</div>
+                          <div class="tables__tableItm">от 120 руб./м2</div>
+                          <div class="tables__tableItm">от 140 руб./м2</div>                  
+                        </div>     
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Время</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>
+                            <div class="tables__tableItm">от 2,5 ч</div>                  
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm"><b>Прихожая:</b></div>
+                            <div class="tables__tableItm"></div>
+                            <div class="tables__tableItm"></div> 
+                            <div class="tables__tableItm"></div>
+                        </div>
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Разложим вещи по местам</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Застелим кровать</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>   
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Обработаем оргтехнику</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>  
+                        <div class="tables__tableRow">
+                            <div class="tables__tableItm">Протрем подоконники</div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__mark"></div></div>
+                            <div class="tables__tableItm"><div class="tables__unMark"></div></div> 
+                        </div>                            
+                  </div>
+                </div> 
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="banner-row">
+            <div class="marquee">
+                <div class="marquee-content">
+                    <div class="marquee-item">
+                        Приедем на уборку без опозданий
+                    </div>
+                    <div class="marquee-item">
+                        Выполним работы качественно и в срок
+                    </div>
+                    <div class="marquee-item">
+                        Менеджер будет на связи с вами 24\7
+                    </div>
+                    <div class="marquee-item">
+                        Заключаем Договор
+                    </div>
+                    <div class="marquee-item">
+                        Дарим сертификат на последующие уборки
+                    </div>
+                    <div class="marquee-item">
+                        Используем профессиональное оборудование
+                    </div>
+                    <div class="marquee-item">
+                        Приедем на уборку без опозданий
+                    </div>
+                    <div class="marquee-item">
+                        Выполним работы качественно и в срок
+                    </div>
+                    <div class="marquee-item">
+                        Менеджер будет на связи с вами 24\7
+                    </div>
+                    <div class="marquee-item">
+                        Заключаем Договор
+                    </div>
+                    <div class="marquee-item">
+                        Дарим сертификат на последующие уборки
+                    </div>
+                    <div class="marquee-item">
+                        Используем профессиональное оборудование
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main-wrapper row">
+                    <div class="footer-links col-lg-9 col-12">
+                        <div class="footer-links-wrapper row">
+                            <div class="col-6 col-sm-4">
+                                <div class="footer-links-list">
+                                    <p>Уборка квартир</p>
+                                    <a href="#">Поддерживающая</a>
+                                    <a href="#">Генеральная</a>
+                                    <a href="#">После ремонта</a>
+                                    <a href="#">Поддерживающая</a>
+                                    <a href="#">После пожара</a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                                <div class="footer-links-list">
+                                    <p>Уборка домов</p>
+                                    <a href="#">Коттеджи</a>
+                                    <a href="#">После ремонта</a>
+                                    <a href="#">Поддерживающая</a>
+                                    <a href="#">Таунхауса</a>
+                                    <a href="#">Дачи</a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                                <div class="footer-links-list">
+                                    <p>Уборка офисов</p>
+                                    <a href="#">Генеральня</a>
+                                    <a href="#">Поддерживающая</a>
+                                    <a href="#">После ремонта</a>
+                                    <a href="#">Ежедневная</a>
+                                    <a href="#">На постоянной основе</a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                                <div class="footer-links-list">
+                                    <p>Допуслуги</p>
+                                    <a href="#">Мытье окон</a>
+                                    <a href="#">Уборка шерсти</a>
+                                    <a href="#">Уборка санузлов</a>
+                                    <a href="#">Уборка кухни</a>
+                                    <a href="#">Уборка балконов</a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                                <div class="footer-links-list">
+                                    <p>Химчистка</p>
+                                    <a href="#">Диванов</a>
+                                    <a href="#">Мягкой мебели</a>
+                                    <a href="#">Стульев</a>
+                                    <a href="#">Ковров</a>
+                                    <a href="#">Матрасов</a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                                <div class="footer-links-list">
+                                    <p>Информация</p>
+                                    <a href="#">Цены</a>
+                                    <a href="#">Наши работы</a>
+                                    <a href="#">Отзывы клиентов</a>
+                                    <a href="#">Контакты</a>
+                                    <a href="#">Карта сайта</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-contacts col-lg-3 col-12">
+                        <div class="footer-contacts__phone">
+                            <img src="assets/img/footer-phone.webp" alt="phone">
+                            <p>+7 (495) 132-32-31</p>
+                        </div>
+                        <div class="footer-contacts__mail">
+                            <img src="assets/img/footer-mail.webp" alt="mail">
+                            <p>info@klining24.ru</p>
+                        </div>
+                        <div class="mid-nav__call">
+                            <div class="footer-mid-nav__call">
+                                <div class="mid-nav__call-img">
+                                    <img src="assets/img/operator.webp" alt="operator">
+                                    <div class="mid-nav__call-active"></div>
+                                </div>
+                                <p>Напишите нам <br> в мессенджеры</p>
+                            </div>
+                            <img src="assets/img/nav-whatsapp.svg" alt="whatsapp">
+                            <img src="assets/img/nav-telegram.svg" alt="telegram">
+                        </div>
+                        <div class="footer-city">
+                            <h5>Москва</h5>
+                            <p>ул. Лесная, 61 ст2</p>
+                            <strong>Регион работы:</strong>
+                            <p>Москва и Московская область</p>        
+                        </div>
+                        <div class="footer-pay-bar">
+                            <h6>Способы оплаты:</h6>
+                            <div class="footer-pay-bar-images">
+                                <img src="assets/img/footer-pay4.webp" alt="pay">
+                                <img src="assets/img/footer-pay.webp" alt="pay">
+                                <img src="assets/img/footer-pay2.webp" alt="pay">
+                                <img src="assets/img/footer-pay3.webp" alt="pay">
+                            </div>
+                            <p>Минимальная стоимость <br>
+                                заказа 3500 руб.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-lower-wrapper">
+                    <div class="footer-logo-wrapper">
+                        <img src="assets/img/nav-logo.png" alt="logo">
+                        <p>© 2023 Клининговая компания Клининг24 <br> Все права защищены</p>
+                    </div>
+                    <div class="footer-lower-numbers">
+                        <p><strong>ОГРНИП:</strong> 317774600469452</p>
+                        <p><strong>ИНН:</strong> 772795877449</p>
+                    </div>
+                    <a href="#" class="footer-policy">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/accordion.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/sliders.js"></script>
+    <script src="assets/js/before-after.min.js"></script>
+    <script src="assets/js/examples.js"></script>
+    <script src="assets/js/side-menu.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/service-page.js"></script>
+    <script>
+       document.addEventListener('DOMContentLoaded', () => {
+    const tableWrappers = document.querySelectorAll('.tables__tableWrp');
+
+    tableWrappers.forEach((wrapper) => {
+        const thItems = wrapper.querySelectorAll('.mob-tables__tableRow_th-item');
+        const tableRows = wrapper.querySelectorAll('.tables__tableRow');
+
+        // Изначально показываем второй элемент в каждом блоке .tables__tableRow
+        tableRows.forEach((tableRow) => {
+            const tableItems = tableRow.querySelectorAll('.tables__tableItm');
+            tableItems.forEach((item, index) => {
+                if (index === 1) { // Показ второго элемента по умолчанию
+                    item.classList.add('flex', 'tables__tableItm-show');
+                } else {
+                    item.classList.remove('flex', 'tables__tableItm-show');
+                }
+            });
+        });
+
+        // Добавляем активный класс первому элементу при загрузке
+        if (thItems.length > 0) {
+            thItems[0].classList.add('active-mob-tales-th');
+        }
+
+        thItems.forEach((thItem, index) => {
+            thItem.addEventListener('click', () => {
+                // Убираем активные классы со всех кнопок
+                thItems.forEach(item => item.classList.remove('active-mob-tales-th'));
+
+                // Добавляем класс активной кнопке
+                thItem.classList.add('active-mob-tales-th');
+
+                // Проходим по всем строкам .tables__tableRow и переключаем соответствующие элементы
+                tableRows.forEach((tableRow) => {
+                    const tableItems = tableRow.querySelectorAll('.tables__tableItm');
+                    tableItems.forEach((item, i) => {
+                        if (i === index + 1) { // Показываем соответствующий элемент
+                            item.classList.add('flex', 'tables__tableItm-show');
+                        } else {
+                            item.classList.remove('flex', 'tables__tableItm-show');
+                        }
+                    });
+                });
+            });
+        });
+    });
+});
+       </script>
+       <script>
+      document.querySelectorAll('.price-table-lower-show-btn').forEach(function(button) {
+    button.addEventListener('click', function() {
+        // Находим следующий элемент после кнопки
+        const wrapper = this.closest('.price-table-lower-show-btn-wrapper').nextElementSibling;
+        
+        // Проверяем, есть ли нужный элемент и его класс
+        if (wrapper && wrapper.classList.contains('price-table-wrapper-bot')) {
+            wrapper.style.display = (wrapper.style.display === 'block') ? 'none' : 'block';
+        }
+    });
+});
+       </script>
+</body>
+</html>

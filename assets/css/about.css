@@ -1,0 +1,71 @@
+.about__page-content {
+    padding-top: 80px;
+    margin-bottom: 64px;
+}
+.standart-page-title {
+    margin-bottom: 16px !important;
+    padding-left: 0 !important;
+}
+.banner-breadcrumb {
+    padding-left: 0 !important;
+}
+.about__page-text img {
+    object-fit: cover;
+    float: left;
+    height: 335px;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.about__page-text p {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.reviews-section {
+    margin-bottom: 128px;
+}
+.equipment-section h2 {
+    max-width: 710px;
+    margin-bottom: 32px !important;
+}
+.equipment-item-text h6 {
+    color: #2f2f2f;
+    font-weight: 500;
+    font-size: 14px;
+    max-width: 220px;
+    text-align: start;
+    padding-left: 16px;
+}
+
+@media (max-width: 1200px) {
+    .about__page-text img {
+        height: auto;
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .about__page-content {
+        padding-top: 60px;
+    }
+    .equipment-item-text h6 {
+        padding-left: 0;
+        font-size: 12px;
+    }
+    .equipment-items .col-6 {
+        margin-bottom: 16px;
+    }
+    .equipment-item-img {
+        height: 150px;
+    }
+    .equipment-section .services-title h2 {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .reviews-section {
+        margin-bottom: 64px;
+    }
+    .about__page-text p {
+        padding-left: 8px;
+    }
+}
