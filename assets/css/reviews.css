@@ -1,0 +1,23 @@
+.reviews__page-content {
+    padding-top: 80px;
+    margin-bottom: 80px;
+}
+.standart-page-title {
+    padding-left: 0 !important;
+}
+.banner-breadcrumb {
+    padding-left: 0 !important;
+}
+.reviews-slide {
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+.reviews-slide p {
+    margin-bottom: 32px;
+}
+@media (max-width: 576px) {
+    .reviews__page-content {
+        padding-top: 60px;
+    }
+}

@@ -1,0 +1,23 @@
+.sertificats__page-content {
+    padding-top: 80px;
+    margin-bottom: 64px;
+}
+.standart-page-title {
+    margin-bottom: 16px !important;
+    padding-left: 0 !important;
+}
+.banner-breadcrumb {
+    padding-left: 0 !important;
+}
+.sertificats__page-items img {
+    max-width: 100%;
+    margin-bottom: 48px;
+}
+.sertificats__page-content p {
+    margin-bottom: 32px;
+}
+@media (max-width: 576px) {
+    .sertificats__page-content {
+        padding-top: 60px;
+    }
+}

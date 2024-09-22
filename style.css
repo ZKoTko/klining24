@@ -1326,6 +1326,7 @@ footer {
     border-style: solid;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 .accordion-item {
     border-radius: 12px !important;
@@ -4362,6 +4363,7 @@ body.no-scroll {
     .sales-mobile-list {
         display: flex;
         flex-direction: row;
+        overflow-y: hidden;
         overflow-x: scroll;
         width: 100%;
     }

@@ -1,0 +1,16 @@
+.garants__page-content {
+    padding-top: 80px;
+    margin-bottom: 64px;
+}
+.standart-page-title {
+    margin-bottom: 16px !important;
+    padding-left: 0 !important;
+}
+.banner-breadcrumb {
+    padding-left: 0 !important;
+}
+@media (max-width: 576px) {
+    .garants__page-content {
+        padding-top: 60px;
+    }
+}
