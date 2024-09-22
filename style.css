@@ -4382,6 +4382,9 @@ body.no-scroll {
         overflow: hidden;
     }
     /*Reviews*/
+    .reviews-section {
+        overflow: hidden;
+    }
     .reviews-section .price-section-title h2 {
         font-size: 22px;
     }
@@ -4413,6 +4416,7 @@ body.no-scroll {
         flex-direction: row;
         overflow-x: scroll;
         flex-wrap: nowrap;
+        width: 105%;
         padding: 0 8px;
         padding-left: 0;
     }
