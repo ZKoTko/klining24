@@ -525,8 +525,9 @@ main {
     line-height: 19px;
     font-size: 12px;
 }
-.banner-breadcrumb span {
+.banner-breadcrumb a {
     color: #ff8562;
+    text-decoration: none;
 }
 .banner-filter {
     position: absolute;
