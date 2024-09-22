@@ -1,0 +1,42 @@
+.map__page-content {
+    padding-top: 80px;
+    margin-bottom: 64px;
+}
+.standart-page-title {
+    margin-bottom: 16px !important;
+    padding-left: 0 !important;
+}
+.banner-breadcrumb {
+    padding-left: 0 !important;
+}
+.map__page-links a{
+    color: #ff8562;
+    text-decoration: none;
+    padding-left: 24px;
+    position: relative;
+}
+.map__page-links a:before {
+    content: "— ";
+    font-weight: 500;
+    line-height: 1;
+    top: 1px;
+    left: 0;
+    color: #ff8562;
+    position: absolute;
+}
+.map__page-links ul li {
+    list-style: none;
+    margin-bottom: 16px;
+}
+.main-ul {
+    padding-left: 0 !important;
+}
+.map__page-links {
+    margin-top: 32px;
+}
+
+@media (max-width: 576px) {
+    .map__page-content {
+        padding-top: 60px;
+    }
+}
